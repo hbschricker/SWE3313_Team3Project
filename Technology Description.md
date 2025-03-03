@@ -9,10 +9,23 @@ coding in Java.
 
 ## Framework:
 The Framework that pairs with Java is called Spring. 
-### About Spring:
-Spring is an application that provides a foundation 
+#### About Spring:
+[Spring](https://spring.io/projects/spring-framework)
+ is an application that provides a foundation 
+
 for developers to create intricate applications easily.
+
 It handles much of the difficulties that come with
+
 expertise applications and allows developers to better
+
 hone in on the Business side of the application.
+
+## Storage Plan:
+
+## Operating Environment:
+
+## Other Software Necessary:
+#### YouTrack:
+#### Intellij :
 
