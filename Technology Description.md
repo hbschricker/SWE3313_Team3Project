@@ -22,10 +22,11 @@ expertise applications and allows developers to better
 hone in on the Business side of the application.
 
 ## Storage Plan:
+SQLLite
 
 ## Operating Environment:
+Intellij
 
 ## Other Software Necessary:
 #### YouTrack:
-#### Intellij :
 
