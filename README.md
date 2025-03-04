@@ -7,7 +7,7 @@ Our project is developed by a team of four dedicated students each contributing 
 
 [Rahle's Resume](https://github.com/Rahellevy/Rahel-Resume/edit/master/README.md)
 
-[Giselle's Resume]()
+[Giselle's Resume](https://github.com/SWEGC/GiselleResume/blob/main/README.md)
 
 [Hannah's Resume]()
 
