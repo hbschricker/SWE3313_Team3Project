@@ -47,5 +47,17 @@ their long-term archive format.
 Intellij
 
 ## Other Software Necessary:
-#### YouTrack:
+YouTrack
+#### About YouTrack:
+[YouTrack](https://www.jetbrains.com/youtrack/)
+ Created by JetBrains is a project management tool that
+
+ allows for many people to collaborate on and keep track of
+
+ a project. They provide AI assistance, as well as the ability
+
+ to create Gantt charts, Timesheets, Reports, and many more 
+
+ useful resources to better keep track of a project.
+
 
