@@ -45,6 +45,15 @@ their long-term archive format.
 
 ## Operating Environment:
 Intellij
+### About IntelliJ
+[IntelliJ](https://www.jetbrains.com/idea/)
+ Created by JetBrains is an IDEA that allows developers to 
+ 
+ develop professional-level systems in Java. Many well 
+
+ Known companies including Samsung, Visa, BMW, ETC. view 
+ 
+ IntelliJ as a trusted IDEA.
 
 ## Other Software Necessary:
 YouTrack
