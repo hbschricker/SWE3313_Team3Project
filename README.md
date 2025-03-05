@@ -13,8 +13,7 @@ Our project is being developed by a team of four dedicated students each contrib
 
 - [Preethi Narahari](/resumes/PreethiRes.md):
   
-- [Rahel Levy](/resumes/RahelRes.md):
-
+- [Rahel Levy](/resumes/RahelRes.md):* 
 - [Hannah Schricker](/resumes/Hannah.md): *Hannah will support the coding effort and record all of the presentations.*
 
 ### Technology Section
