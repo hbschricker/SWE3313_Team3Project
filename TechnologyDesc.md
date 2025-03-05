@@ -8,10 +8,9 @@ All of the members of this team have prior experience
 coding in Java. 
 
 ## Framework:
-The Framework that pairs with Java is called Spring. 
+The Framework that pairs with Java is called [Spring](https://spring.io/projects/spring-framework). 
 #### About Spring:
-[Spring](https://spring.io/projects/spring-framework)
- is an application that provides a foundation 
+Spring is an application that provides a foundation 
 
 for developers to create intricate applications easily.
 
@@ -22,10 +21,9 @@ expertise applications and allows developers to better
 hone in on the Business side of the application.
 
 ## Storage Plan:
-SQLite
-### About SQLite
 [SQLite](https://www.sqlite.org/)
-is a compact, fast, and reliable database engine.
+### About SQLite
+SQLite is a compact, fast, and reliable database engine.
 
 This database engine, being the most commonly used,
 
@@ -44,10 +42,9 @@ the transfer of important data across systems as well as for
 their long-term archive format.
 
 ## Operating Environment:
-Intellij
-### About IntelliJ
 [IntelliJ](https://www.jetbrains.com/idea/)
- Created by JetBrains is an IDEA that allows developers to 
+### About IntelliJ
+IntelliJ Created by JetBrains is an IDEA that allows developers to 
  
  develop professional-level systems in Java. Many well 
 
@@ -56,10 +53,9 @@ Intellij
  IntelliJ as a trusted IDEA.
 
 ## Other Software Necessary:
-YouTrack
-#### About YouTrack:
 [YouTrack](https://www.jetbrains.com/youtrack/)
- Created by JetBrains is a project management tool that
+#### About YouTrack:
+YouTrack Created by JetBrains is a project management tool that
 
  allows for many people to collaborate on and keep track of
 
