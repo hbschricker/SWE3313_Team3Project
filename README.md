@@ -9,6 +9,6 @@ Our project is developed by a team of four dedicated students each contributing 
 
 [Giselle's Resume](https://github.com/SWEGC/GiselleResume/blob/main/README.md)
 
-[Hannah's Resume](https://github.com/hbschricker/HannahSchricker_Resume/tree/main?tab=readme-ov-file#hannahs_resume)
+[Hannah's Resume](/resumes/Hannah.md)
 
-[Preethi's Resume](/resumes/PreethiNaarahariResume.md)
+[Preethi's Resume](/resumes/PreethiRes.md)
