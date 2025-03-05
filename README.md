@@ -11,4 +11,4 @@ Our project is developed by a team of four dedicated students each contributing 
 
 [Hannah's Resume](https://github.com/hbschricker/HannahSchricker_Resume/tree/main?tab=readme-ov-file#hannahs_resume)
 
-[Preethi's Resume]()
+[Preethi's Resume](https://github.com/DoveNarira/KSU_DoveREP/blob/main/README.md)
