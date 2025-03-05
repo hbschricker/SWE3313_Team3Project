@@ -7,6 +7,8 @@ Thank you for viewing our work!
 
 ## Project Plan:
 
+### Meet the Team
+
 Our project is being developed by a team of four dedicated students each contributing their skills to different areas of the project. You can learn more about us here: 
 
 - [Giselle Cruz](https://github.com/SWEGC/GiselleResume/blob/main/README.md):
@@ -16,3 +18,13 @@ Our project is being developed by a team of four dedicated students each contrib
 - [Rahel Levy](https://github.com/Rahellevy/Rahel-Resume/edit/master/README.md):
 
 - [Hannah Schricker](/resumes/Hannah.md): *Hannah will support the coding effort and record all of the presentations.*
+
+### Technology Section
+
+To build our application, we will be coding in Java through Spring Initializr. Additionally, we will be using a SQLite database to store item and user attributes.
+
+Click [here]() for a detailed explanation of the technologies we are using and why we chose them.
+
+### Gantt Chart
+
+Click [here]() to view our project plan on YouTrack.
