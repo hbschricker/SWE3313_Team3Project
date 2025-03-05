@@ -1,8 +1,8 @@
 ### Hannah Schricker
 
-Email: **hschrick@students.kennesaw.edu**
+📧 **hschrick@students.kennesaw.edu**
 
-Click here to view Hannah's LinkedIn profile.
+🌐 https://github.com/hbschricker | www.linkedin.com/in/hannah-schricker-8129621b1
 
 
 
