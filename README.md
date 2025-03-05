@@ -23,7 +23,7 @@ Our project is being developed by a team of four dedicated students each contrib
 
 To build our application, we will be coding in Java through Spring Initializr. Additionally, we will be using a SQLite database to store item and user attributes.
 
-Click [here]() for a detailed explanation of the technologies we are using and why we chose them.
+Click [here](/TechnologyDesc.md) for a detailed explanation of the technologies we are using and why we chose them.
 
 ### Gantt Chart
 
