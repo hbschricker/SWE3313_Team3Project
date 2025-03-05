@@ -23,7 +23,7 @@ Click [here](TechnologyDesc.md) for a detailed explanation of the technologies w
 
 ### Gantt Chart
 
-Click [here]() to view our project plan on YouTrack.
+Click [here](https://hschrick.youtrack.cloud/gantt-charts/226-0) to view our project plan on YouTrack.
 
 ### Project Plan Video Presentation
 
