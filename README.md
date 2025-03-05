@@ -28,3 +28,7 @@ Click [here]() for a detailed explanation of the technologies we are using and w
 ### Gantt Chart
 
 Click [here]() to view our project plan on YouTrack.
+
+### Project Plan Video Presentation
+
+Click [here]() for a video presentation of our project plan.
