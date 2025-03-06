@@ -27,6 +27,6 @@ Click [here](https://hschrick.youtrack.cloud/gantt-charts/226-0) to view our pro
 
 ### Project Plan Video Presentation
 
-Click [here]() for a video presentation of our project plan.
+Click [here](https://www.loom.com/share/cb996548a020461a92d99a82d9961124) for a video presentation of our project plan.
 
 Thank you for viewing our work!
