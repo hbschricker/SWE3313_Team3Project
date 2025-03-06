@@ -12,8 +12,8 @@
 -	Visual Studio
 -	Dia
 -	Post it Cloud
-#### Technical Experience :
--	Programming & Problem Solving 1321/1322
--	Database Systems
--	Data Structures
--	Computer organization & Architecture
+### Technical Experience :
+#### -	Programming & Problem Solving 1321/1322
+#### -	Database Systems
+#### -	Data Structures
+#### -	Computer organization & Architecture
