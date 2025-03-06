@@ -8,7 +8,7 @@
 ## <u>**Technical Skills**</u>
 
 **Programming Languages:**
-  - C#, Java, R
+  - Java, C#, R
 
 **IDEs & Other Programs:**
   - IntelliJ, Visual Studio, Dia Diagram, Post it Cloud
