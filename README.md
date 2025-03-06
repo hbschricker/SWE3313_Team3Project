@@ -13,7 +13,7 @@ Our project is being developed by a team of four dedicated students each contrib
 
 - [Preethi Narahari](/resumes/PreethiRes.md):
   
-- [Rahel Levy](/resumes/RahelRes.md): Rahel will create and maintain the README, support the coding process, as well as the Gantt chart on YouTrack.
+- [Rahel Levy](/resumes/RahelRes.md): *Rahel will create and maintain the README, support the coding process, as well as update the Gantt chart on YouTrack.*
 
 - [Hannah Schricker](/resumes/HannahRes.md): *Hannah will support the coding effort and record all of the presentations.*
 
