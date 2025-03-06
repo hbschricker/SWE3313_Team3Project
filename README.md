@@ -1,7 +1,7 @@
 # SWE3313_Databaes
-Welcome to the official Database class project repository for SWE 3313! This repository contains our project documentation, source code, and presentation materials.
+Welcome to the official Databaes class project repository for SWE 3313! This repository contains our project documentation, source code, and presentation materials.
 
-The Database online store offers handcrafted jewelry products made from recycled materials. Our mission is to provide a user-friendly platform that showcases our unique products while promoting sustainability. For our application, we are building an e-commerce website using Java and Spring Initializr to sell our handcrafted jewelry items. Additionally, we will be using an SQLite database to store item and user attributes.
+The Databaes's online store offers handcrafted jewelry products made from recycled materials. Our mission is to provide a user-friendly platform that showcases our unique products while promoting sustainability. For our application, we are building an e-commerce website using Java and Spring Initializr to sell our handcrafted jewelry items. Additionally, we will be using a SQLite database to store item and user attributes.
 
 ## Project Plan:
 
@@ -13,8 +13,9 @@ Our project is being developed by a team of four dedicated students each contrib
 
 - [Preethi Narahari](/resumes/PreethiRes.md):
   
-- [Rahel Levy](/resumes/RahelRes.md):* 
-- [Hannah Schricker](/resumes/Hannah.md): *Hannah will support the coding effort and record all of the presentations.*
+- [Rahel Levy](/resumes/RahelRes.md):
+
+- [Hannah Schricker](/resumes/HannahRes.md): *Hannah will support the coding effort and record all of the presentations.*
 
 ### Technology Section
 
@@ -28,4 +29,4 @@ Click [here](https://hschrick.youtrack.cloud/gantt-charts/226-0) to view our pro
 
 Click [here]() for a video presentation of our project plan.
 
-Thank you for taking the time to view our work!
+Thank you for viewing our work!
