@@ -9,7 +9,7 @@ The Databaes's online store offers handcrafted jewelry products made from recycl
 
 Our project is being developed by a team of four dedicated students each contributing their skills to different areas of the project. You can learn more about us here: 
 
-- [Giselle Cruz](/resumes/GiselleRes.md)
+- [Giselle Cruz](/resumes/GiselleRes.md):
 
 - [Preethi Narahari](/resumes/PreethiRes.md):
   
