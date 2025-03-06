@@ -7,7 +7,7 @@
 # Technical Skills
 
 #### Programming Languages:  
-Java, JavaScript
+ Java, JavaScript
 
 #### Version Control, Frameworks & Tools : 
 Git, GitHub, Agile/Scrum
@@ -23,5 +23,5 @@ Relevant Coursework
 #### Software Engineering: 
 Agile development, software design principles
 
-### Data Structures & Algorithms: 
+#### Data Structures & Algorithms: 
 problem-solving strategies
