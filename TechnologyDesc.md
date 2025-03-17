@@ -20,9 +20,5 @@ This database engine is the most commonly used storage mechanism. It is embedded
 ### About IntelliJ
 IntelliJ Created by JetBrains is an IDEA that allows developers to develop professional-level systems in Java. Many well-known companies including Samsung, Visa, BMW, ETC. view IntelliJ as a trusted IDEA.
 
-## Other Software Necessary:
-[YouTrack](https://www.jetbrains.com/youtrack/)
-#### About YouTrack:
-YouTrack Created by JetBrains is a project management tool that allows for many people to collaborate on and keep track of a project. They provide AI assistance, as well as the ability to create Gantt charts, Timesheets, Reports, and many more useful resources to better keep track of a project.
 
 
