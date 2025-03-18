@@ -9,13 +9,13 @@ The Databaes's online store offers handcrafted jewelry products made from recycl
 
 Our project is being developed by a team of four dedicated students each contributing their skills to different areas of the project. You can learn more about us here: 
 
-- [Giselle Cruz](/resumes/GiselleRes.md): *Giselle will research and note information about any used technology, support the coding process, and assist the other team members.*
+- [Giselle Cruz](/resumes/GiselleResume.md): *Giselle will research and note information about any used technology, support the coding process, and assist the other team members.*
 
-- [Preethi Narahari](/resumes/PreethiRes.md): *Preethi will create and maintain the Gantt Chart, assist with Markdown file formatting, and support the coding process.*
+- [Preethi Narahari](/resumes/PreethiResume.md): *Preethi will create and maintain the Gantt Chart, assist with Markdown file formatting, and support the coding process.*
   
-- [Rahel Levy](/resumes/RahelRes.md): *Rahel will create and maintain the README, support the coding process, as well as update the Gantt chart on YouTrack.*
+- [Rahel Levy](/resumes/RahelResume.md): *Rahel will create and maintain the README, support the coding process, as well as update the Gantt chart on YouTrack.*
 
-- [Hannah Schricker](/resumes/HannahRes.md): *Hannah will support the coding effort and record all of the presentations.*
+- [Hannah Schricker](/resumes/HannahResume.md): *Hannah will support the coding effort and record all of the presentations.*
 
 ### Technology Section
 
