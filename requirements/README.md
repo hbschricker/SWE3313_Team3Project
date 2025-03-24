@@ -8,6 +8,8 @@ Click [here]() to view a breakdown of our project requirements.
 
 ## Use Case Diagram:
 
+In software development, use case diagrams are designed to help stakeholders understand the functional requirements of a system by showing how users will interact with it.
+
 Click [here]() to view our use case diagram.
 
 ## Decision Table:
