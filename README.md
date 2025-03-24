@@ -29,4 +29,8 @@ Click [here](https://hschrick.youtrack.cloud/gantt-charts/226-0) to view our pro
 
 Click [here](https://www.loom.com/share/cb996548a020461a92d99a82d9961124) for a video presentation of our project plan.
 
+### Requirements
+
+Click [here](/requirements/README.md) to view our project requirements.
+
 Thank you for viewing our work!
