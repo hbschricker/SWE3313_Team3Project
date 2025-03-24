@@ -1,5 +1,7 @@
 # Requirements
 
+Welcome to our requirements page! Here, you'll find a detailed description of what our software will do, how it will be expected to perform and the functionality the project needs to meet the demands of all stakeholders.
+
 ## Requirements Writing:
 
 Click [here]() to view a breakdown of our project requirements.
