@@ -1,5 +1,5 @@
 ##Version 2:
-•	Admin account promotion: T3E-1
+###Admin account promotion: T3E-1
 o	Assignment Requisite: T3S-11 
 - Priority: Need to Have
 - Estimated Effort: 2 days 
