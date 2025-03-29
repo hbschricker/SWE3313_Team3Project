@@ -246,19 +246,19 @@
 	- Functional
 	- The interface will provide administrators a form to fill out an item's information to the inventory database without directly typing in the database.
 
- - #### (T3S-38) Administrators can upload an image to the interface.
+- #### (T3S-38) Administrators can upload an image to the interface.
 	- Priority: Want to Have
 	- Estimated Effort: 2 days
 	- Functional
 	- The interface will allow administrators to upload an image from their device onto the form.
 
-   - #### (T3S-39) The interface will have a search bar to find an item.
+- #### (T3S-39) The interface will have a search bar to find an item.
 	- Priority: Need to Have
 	- Estimated Effort: 2 days
 	- Functional
 	- The interface will allow administrators to search through items in the inventory.
 
-    - #### (T3S-40) The interface will allow administrators to remove items from the inventory.
+- #### (T3S-40) The interface will allow administrators to remove items from the inventory.
 	- Priority: Need to Have
 	- Estimated Effort: 2 days
 	- Functional
@@ -266,7 +266,7 @@
 
 ### (T3E-13) Admin Sales Report Functionality:
 
-- #### (T3S-38) Sales Report Requisite.
+- #### (T3S-41) Sales Report Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 2 days
 	- Functional
@@ -274,7 +274,7 @@
 
 ### (T3E-14) Inventory Search Box:
 
-- #### (T3S-39) Search Requisite.
+- #### (T3S-42) Search Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 3 days
 	- Functional 
@@ -282,13 +282,13 @@
 
 ### (T3E-15) Update Cart Functionality:
 
-- #### (T3S-40) Cart Functions.
+- #### (T3S-43) Cart Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 1 day
 	- Non-Functional
 	- The User has the ability to back up to the checkout page or the main page.
 
-- #### (T3S-41) Order Functions.
+- #### (T3S-44) Order Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 8 hours 
 	- Functional
