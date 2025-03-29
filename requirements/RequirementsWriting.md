@@ -230,46 +230,46 @@
 	- The Databaes must rehearse and practice before presenting to the customer. Coding can only start after the customer is pleased with the mockup.
 
 ## Version 2:
-### (T3E-1) Admin Account Promotion:
+### (T3E-11) Admin Account Promotion:
 
-- #### (T3S-11) Assignment Requisite.
+- #### (T3S-36) Assignment Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 2 days 
 	- Functional 
 	- Admin users have the ability to assign a registered account as an admin. A non-admin account cannot assign itself to be an admin.
  
-### (T3E-2) Admin Inventory Management:
+### (T3E-12) Admin Inventory Management:
 
-- #### (T3S-12) Inventory Control.
+- #### (T3S-37) Inventory Control.
 	- Priority: Need to Have
 	- Estimated Effort: 3 days
 	- Functional
 	- Create an approach for admin users to add new inventory or remove existing inventory from the store.
 
-### (T3E-3) Admin Sales Report Functionality:
+### (T3E-13) Admin Sales Report Functionality:
 
-- #### (T3S-13) Sales Report Requisite.
+- #### (T3S-38) Sales Report Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 2 days
 	- Functional
 	- Admins are able to export the sales report to CSV, which allows for better data analysis.
 
-### (T3E-4) Inventory Search Box:
+### (T3E-14) Inventory Search Box:
 
-- #### (T3S-14) Search Requisite.
+- #### (T3S-39) Search Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 3 days
 	- Functional 
 	- The user has the ability to search inventory via the product name or the product description (keywords like color, type of jewelry, etc.)
 
-### (T3E-5) Update Cart Functionality:
+### (T3E-15) Update Cart Functionality:
 
-- #### (T3S-15) Cart Functions.
+- #### (T3S-40) Cart Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 1 day
 	- Non-Functional
 	- The User has the ability to back up to the checkout page or the main page.
-- #### (T3S-16) Order Functions.
+- #### (T3S-41) Order Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 8 hours 
 	- Functional
