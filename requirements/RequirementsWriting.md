@@ -293,3 +293,26 @@
 	- Estimated Effort: 8 hours 
 	- Functional
 	- To complete the transaction, the user is able to click Complete Order.
+
+## Version 3:
+- ### (T3-E16) Administrator Account Management Interface:
+	- #### (T3S-42) The Interface can promote a user to an administrator
+		- Priority: Want to Have
+		- Estimated Effort: 3-4 days
+		- Functional
+		- The interface will allow an existing administrator to pick a user and change their access level.
+	- #### (T3S-43) Administrators can search for a specific user.
+		- Priority: Want to Have
+		- Estimated Effort: 2-3 days
+		- Functional
+		- Existing administrators can use a search box to search through a list of usernames. Once they find the user they want, they can select their username.
+	- #### (T3S-44) Administrators can change a user's access level.
+		- Priority: Want to Have
+		- Estimated Effort: 1-2
+		- Functional
+		- Existing administrators can click on a button called 'Promote' to change the user's access level from User to Administrator. 
+	- #### (T3S-45) Administrators can confirm to change a user's account.
+		- Priority: Want to Have
+		- Estimated Effort: 3-4 days
+		- Functional
+		- Existing administrators can click on a button called 'Confirm' to commit any changes.
