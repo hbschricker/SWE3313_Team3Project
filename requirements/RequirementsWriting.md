@@ -238,35 +238,17 @@
 	- Functional 
 	- Admin users have the ability to assign a registered account as an admin. A non-admin account cannot assign itself to be an admin.
  
-### (T3E-12) Administrator Inventory Management Interface:
+### (T3E-12) Administrator Inventory Management:
 
-- #### (T3S-37) The Interface will have a form to add items to the inventory database.
+- #### (T3S-37) Administrators can add and remove items from  the inventory database.
 	- Priority: Need to Have
 	- Estimated Effort: 3 days
 	- Functional
-	- The interface will provide administrators a form to fill out an item's information to the inventory database without directly typing in the database.
-
-- #### (T3S-38) Administrators can upload an image to the interface.
-	- Priority: Want to Have
-	- Estimated Effort: 2 days
-	- Functional
-	- The interface will allow administrators to upload an image from their device onto the form.
-
-- #### (T3S-39) The interface will have a search bar to find an item.
-	- Priority: Need to Have
-	- Estimated Effort: 2 days
-	- Functional
-	- The interface will allow administrators to search through items in the inventory.
-
-- #### (T3S-40) The interface will allow administrators to remove items from the inventory.
-	- Priority: Need to Have
-	- Estimated Effort: 2 days
-	- Functional
-	- The interface will allow administrators to select a 'Delete' button to remove a selected item from the inventory.
+	- Administrators can directly add items and an image to the inventory database. They can also remove inventory from the database.
 
 ### (T3E-13) Admin Sales Report Functionality:
 
-- #### (T3S-41) Sales Report Requisite.
+- #### (T3S-38) Sales Report Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 2 days
 	- Functional
@@ -274,7 +256,7 @@
 
 ### (T3E-14) Inventory Search Box:
 
-- #### (T3S-42) Search Requisite.
+- #### (T3S-39) Search Requisite.
 	- Priority: Need to Have
 	- Estimated Effort: 3 days
 	- Functional 
@@ -282,37 +264,50 @@
 
 ### (T3E-15) Update Cart Functionality:
 
-- #### (T3S-43) Cart Functions.
+- #### (T3S-40) Cart Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 1 day
 	- Non-Functional
 	- The User has the ability to back up to the checkout page or the main page.
-
-- #### (T3S-44) Order Functions.
-	- Priority: Need to Have
-	- Estimated Effort: 8 hours 
-	- Functional
-	- To complete the transaction, the user is able to click Complete Order.
-
+ 
 ## Version 3:
-- ### (T3-E16) Administrator Account Management Interface:
-	- #### (T3S-42) The Interface can promote a user to an administrator
-		- Priority: Want to Have
-		- Estimated Effort: 3-4 days
-		- Functional
-		- The interface will allow an existing administrator to pick a user and change their access level.
-	- #### (T3S-43) Administrators can search for a specific user.
-		- Priority: Want to Have
-		- Estimated Effort: 2-3 days
-		- Functional
-		- Existing administrators can use a search box to search through a list of usernames. Once they find the user they want, they can select their username.
-	- #### (T3S-44) Administrators can change a user's access level.
-		- Priority: Want to Have
-		- Estimated Effort: 1-2
-		- Functional
-		- Existing administrators can click on a button called 'Promote' to change the user's access level from User to Administrator. 
-	- #### (T3S-45) Administrators can confirm to change a user's account.
-		- Priority: Want to Have
-		- Estimated Effort: 3-4 days
-		- Functional
-		- Existing administrators can click on a button called 'Confirm' to commit any changes.
+ ### (T3-E16) Administrator Account Management Interface:
+- #### (T3S-41) The Interface can promote a user to an administrator
+	- Priority: Want to Have
+	- Estimated Effort: 3-4 days
+	- Functional
+	- The interface will allow an existing administrator to pick a user and change their access level.
+- #### (T3S-42) Administrators can search for a specific user.
+	- Priority: Want to Have
+	- Estimated Effort: 2-3 days
+	- Functional
+	- Existing administrators can use a search box to search through a list of usernames. Once they find the user they want, they can select their username.
+- #### (T3S-43) Administrators can change a user's access level.
+	- Priority: Want to Have
+	- Estimated Effort: 1-2
+	- Functional
+	- Existing administrators can click on a button called 'Promote' to change the user's access level from User to Administrator. 
+- #### (T3S-44) Administrators can confirm to change a user's account.
+	- Priority: Want to Have
+	- Estimated Effort: 3-4 days
+	- Functional
+	- Existing administrators can click on a button called 'Confirm' to commit any changes.
+
+### (T3-E17) Administrator Inventory Management Interface:
+- #### (T3S-45) The Interface will have a form to add items to the inventory database.
+	- Priority: Want to Have
+	- Estimated Effort: 4-5 days
+	- Functional
+	- The interface will provide administrators a form to fill out an item's information to the inventory database without directly typing in the database.
+
+- #### (T3S-46) Administrators can upload an image to the interface.
+	- Priority: Want to Have
+	- Estimated Effort: 2 days
+	- Functional
+	- The interface will allow administrators to upload an image from their device onto the form.
+
+- #### (T3S-47) The Interface will be able to add multiple pictures for an item.
+	- Priority: Want to Have
+	- Estimated Effort: 1-2 days
+	- Functional
+	- The interface will allow administrators to add multiple images to one single item.
