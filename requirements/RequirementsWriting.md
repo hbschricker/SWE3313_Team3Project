@@ -181,6 +181,53 @@
     - Functional
 	- After the user's transaction is completed, they cannot go back to the payment screen.
  
+### (T3E-8) Order Confirmation Screen:
+
+- #### (T3S-29) The Order Confirmation Screen must display the purchase information.
+    - Priority: Must Have
+    - Estimated Effort: 10 hours
+    - Functional
+    - The information includes the name and price of the items, the subtotal, the tax, shipping speed cost, and the grand total. The tax is 6% of the subtotal.
+
+- #### (T3S-30) Users must be able to confirm their order.
+    - Priority: Must Have
+    - Estimated Effort: 1 day
+    - Functional
+	    - The Order Confirmation screen must have a 'Complete Order' button that the user can click. Pressing it will take them to the Order Completion screen.
+
+- #### (T3S-31) Users must not be able to revisit the Order Confirmation Screen after purchase.
+    - Priority: Must Have
+    - Estimated Effort: 6 hours
+    - Functional
+	- After the user's transaction is completed, they cannot go back to the order confirmation screen.
+
+### (T3E-9) Order Completion Screen:
+
+- #### (T3S-32) The Order Completion Screen must display the order's receipt.
+    - Priority: Must Have
+    - Estimated Effort: 1-2 days
+    - Functional
+    - The receipt must contain the last four digits of the user's credit card and their shipping address.
+
+- #### (T3S-33) Users must be able to exit out of the receipt.
+    - Priority: Must Have
+    - Estimated Effort: 1 day
+    - Functional
+	- The receipt must have an 'OK' button that the users can click. Clicking the button will take the user back to the main screen.
+
+### (T3E-10) Order Completion Screen:
+
+- #### (T3S-34) The Databaes must make a high-fidelity mockup.
+    - Priority: Must Have
+    - Estimated Effort: 3-4 days
+    - Functional
+    - The mockup must show how the screens and applications flow into each other.
+
+- #### (T3S-35) The Databaes must present the mockup to the customer.
+    - Priority: Must Have
+    - Estimated Effort: 1-2 day
+    - Functional
+	- The Databaes must rehearse and practice before presenting to the customer. Coding can only start after the customer is pleased with the mockup.
 
 ## Version 2:
 ### Admin account promotion: T3E-1
