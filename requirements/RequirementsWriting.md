@@ -238,13 +238,31 @@
 	- Functional 
 	- Admin users have the ability to assign a registered account as an admin. A non-admin account cannot assign itself to be an admin.
  
-### (T3E-12) Admin Inventory Management:
+### (T3E-12) Administrator Inventory Management Interface:
 
-- #### (T3S-37) Inventory Control.
+- #### (T3S-37) The Interface will have a form to add items to the inventory database.
 	- Priority: Need to Have
 	- Estimated Effort: 3 days
 	- Functional
-	- Create an approach for admin users to add new inventory or remove existing inventory from the store.
+	- The interface will provide administrators a form to fill out an item's information to the inventory database without directly typing in the database.
+
+ - #### (T3S-38) Administrators can upload an image to the interface.
+	- Priority: Want to Have
+	- Estimated Effort: 2 days
+	- Functional
+	- The interface will allow administrators to upload an image from their device onto the form.
+
+   - #### (T3S-39) The interface will have a search bar to find an item.
+	- Priority: Need to Have
+	- Estimated Effort: 2 days
+	- Functional
+	- The interface will allow administrators to search through items in the inventory.
+
+    - #### (T3S-40) The interface will allow administrators to remove items from the inventory.
+	- Priority: Need to Have
+	- Estimated Effort: 2 days
+	- Functional
+	- The interface will allow administrators to select a 'Delete' button to remove a selected item from the inventory.
 
 ### (T3E-13) Admin Sales Report Functionality:
 
@@ -269,6 +287,7 @@
 	- Estimated Effort: 1 day
 	- Non-Functional
 	- The User has the ability to back up to the checkout page or the main page.
+
 - #### (T3S-41) Order Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 8 hours 
