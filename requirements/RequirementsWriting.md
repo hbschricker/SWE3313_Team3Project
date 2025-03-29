@@ -1,5 +1,5 @@
-# Version 1:
-## (T3E-1) User Authentication and Registration:
+## Version 1:
+### (T3E-1) User Authentication and Registration:
 
 - #### (T3S-1) Users must be able to self-register and login.
     - Priority: Must Have
@@ -19,7 +19,7 @@
     - Functional
 	- Users must not be able to register an administrator account nor register as an administrator.
 
-## (T3E-2) Administrator Functionalities:
+### (T3E-2) Administrator Functionalities:
 
 - #### (T3S-4) Administrators must be able to promote user accounts to administrator accounts.
     - Priority: Must Have
@@ -39,7 +39,7 @@
     - Functional
 	- Sales reports will show all purchased items as well as who bought the items.
 
-## (T3E-3) Main Screen:
+### (T3E-3) Main Screen:
 
 - #### (T3S-7) The main screen must display the inventory from highest to lowest price.
     - Priority: Must Have
@@ -59,7 +59,7 @@
     - Functional
 	- The checkout button must direct the user to checkout their purchases.
 
-## (T3E-4) Inventory Display and Management:
+### (T3E-4) Inventory Display and Management:
 
 - #### (T3S-10) Inventory must have a description and button for each item
     - Priority: Must Have
@@ -79,7 +79,7 @@
     - Functional
 	- Sold items must be moved out of the inventory list after a user completes a purchase to assure no other users purchase it.
 
-## (T3E-5) Shopping Cart and Checkout Process:
+### (T3E-5) Shopping Cart and Checkout Process:
 
 - #### (T3S-13) Users must be able to add items to the cart.
     - Priority: Must Have
@@ -117,7 +117,7 @@
     - Functional
 	- User's information, such as their credit card and address, must be collected to ensure the payment is authentic.
 
-## (T3E-6) Checkout Screen:
+### (T3E-6) Checkout Screen:
 
 - #### (T3S-19) The checkout screen must display the cart items and subtotal.
     - Priority: Must Have
@@ -137,7 +137,7 @@
     - Functional
 	- After the user's transaction is completed, they cannot go back to the checkout screen.
 
-## (T3E-7) Payment Screen:
+### (T3E-7) Payment Screen:
 
 - #### (T3S-22) The payment screen must display empty information fields.
     - Priority: Must Have
