@@ -133,7 +133,7 @@
 
 - #### (T3S-21) Users must not be able to revisit the Checkout Screen after purchase.
     - Priority: Must Have
-    - Estimated Effort: 1 day
+    - Estimated Effort: 6 hours
     - Functional
 	- After the user's transaction is completed, they cannot go back to the checkout screen.
 
@@ -177,7 +177,7 @@
 
 - #### (T3S-28) Users must not be able to revisit the Payment Screen after purchase.
     - Priority: Must Have
-    - Estimated Effort: 1 day
+    - Estimated Effort: 6 hours
     - Functional
 	- After the user's transaction is completed, they cannot go back to the payment screen.
  
