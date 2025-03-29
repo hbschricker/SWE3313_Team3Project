@@ -230,18 +230,21 @@
 	- The Databaes must rehearse and practice before presenting to the customer. Coding can only start after the customer is pleased with the mockup.
 
 ## Version 2:
-### Admin account promotion: T3E-1
-#### Assignment Requisite: T3S-11 
-- Priority: Need to Have
-- Estimated Effort: 2 days 
--	Functional 
--	Admin users have the ability to assign a registered account as an admin. A non-admin account cannot assign itself to be an admin 
-### Admin Inventory Management: T3E-2 
-#### Inventory Control: T3S-12
--	Priority: Need to Have
--	Estimated Effort: 3 days
--	Functional
--	Create an approach for admin users to add new inventory or remove existing inventory from the store.
+### (T3E-1) Admin Account Promotion:
+
+- #### (T3S-11) Assignment Requisite.
+	- Priority: Need to Have
+	- Estimated Effort: 2 days 
+	- Functional 
+	- Admin users have the ability to assign a registered account as an admin. A non-admin account cannot assign itself to be an admin.
+ 
+### (T3E-2) Admin Inventory Management:
+
+- #### (T3S-12) Inventory Control.
+	- Priority: Need to Have
+	- Estimated Effort: 3 days
+	- Functional
+	- Create an approach for admin users to add new inventory or remove existing inventory from the store.
 ### Admin Sales Report functionality: T3E-3
 #### Sales Report requisite: T3S-13
 -	Priority: Need to Have
