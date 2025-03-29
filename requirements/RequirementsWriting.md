@@ -245,28 +245,32 @@
 	- Estimated Effort: 3 days
 	- Functional
 	- Create an approach for admin users to add new inventory or remove existing inventory from the store.
-### Admin Sales Report functionality: T3E-3
-#### Sales Report requisite: T3S-13
--	Priority: Need to Have
--	Estimated Effort: 2 days
--	Functional
--	Admins are able to export the sales report to CSV, which allows for better data analysis.
-### Inventory search box: T3E-4
-#### Search requisite: T3S-14
--	Priority: Need to Have
--	Estimated Effort: 3 days
--	Functional 
--	The user has the ability to search inventory via the product name or the product description (keywords like color, type of jewelry, etc.)
-  ### Update cart functionality: T3E-5
-#### Cart functions: T3S-15
--	Priority: Need to Have
--	Estimated Effort: 1 day
--	Non-Functional
--	The User has the ability to back up to the checkout page or the main page
-#### Order functions: T3S-16
--	Priority: Need to Have
--	Estimated Effort: 8 hours 
--	Functional
--	To complete the transaction, the user is able to click Complete Order.
 
+### (T3E-3) Admin Sales Report Functionality:
 
+- #### (T3S-13) Sales Report Requisite.
+	- Priority: Need to Have
+	- Estimated Effort: 2 days
+	- Functional
+	- Admins are able to export the sales report to CSV, which allows for better data analysis.
+
+### (T3E-4) Inventory Search Box:
+
+- #### (T3S-14) Search Requisite.
+	- Priority: Need to Have
+	- Estimated Effort: 3 days
+	- Functional 
+	- The user has the ability to search inventory via the product name or the product description (keywords like color, type of jewelry, etc.)
+
+### (T3E-5) Update Cart Functionality:
+
+- #### (T3S-15) Cart Functions.
+	- Priority: Need to Have
+	- Estimated Effort: 1 day
+	- Non-Functional
+	- The User has the ability to back up to the checkout page or the main page.
+- #### (T3S-16) Order Functions.
+	- Priority: Need to Have
+	- Estimated Effort: 8 hours 
+	- Functional
+	- To complete the transaction, the user is able to click Complete Order.
