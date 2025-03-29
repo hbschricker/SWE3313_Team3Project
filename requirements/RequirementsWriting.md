@@ -267,7 +267,7 @@
 - #### (T3S-40) Cart Functions.
 	- Priority: Need to Have
 	- Estimated Effort: 1 day
-	- Non-Functional
+	- Functional
 	- The User has the ability to back up to the checkout page or the main page.
  
 ## Version 3:
@@ -284,7 +284,7 @@
 	- Existing administrators can use a search box to search through a list of usernames. Once they find the user they want, they can select their username.
 - #### (T3S-43) Administrators can change a user's access level.
 	- Priority: Want to Have
-	- Estimated Effort: 1-2
+	- Estimated Effort: 1-2 days
 	- Functional
 	- Existing administrators can click on a button called 'Promote' to change the user's access level from User to Administrator. 
 - #### (T3S-44) Administrators can confirm to change a user's account.
@@ -311,3 +311,17 @@
 	- Estimated Effort: 1-2 days
 	- Functional
 	- The interface will allow administrators to add multiple images to one single item.
+
+### (T3-E18) Sales Report Receipts:
+- #### (T3S-48) Administrators can view receipts in sales report
+	- Priority: Want to Have
+	- Estimated Effort: 1-2 days
+	- Functional
+	- In the sales report, viewing an item will also show any receipts that are related to that item.
+
+### (T3-E19) Automatic Receipt Mailing:
+- #### (T3S-49) An order receipt will be mailed to the user's email
+	- Priority: Want to Have
+	- Estimated Effort: 1 day
+	- Functional
+	- After a user confirms an order, the receipt they view on the Order Completion page will be sent to their email automatically.
