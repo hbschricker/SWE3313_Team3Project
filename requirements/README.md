@@ -20,4 +20,4 @@ Click [here](DecisionTable.md) to view our decision table.
 
 ## Requirements Video Presentation:
 
-Click [here]() for a video presentation of our requirements section.
+Click [here](https://www.loom.com/share/2f1ffe58339142188c9016cb0c97b815) for a video presentation of our requirements section.
