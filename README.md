@@ -33,4 +33,8 @@ Click [here](https://www.loom.com/share/cb996548a020461a92d99a82d9961124) for a 
 
 Click [here](/requirements/README.md) to view our project requirements.
 
+### User Interface Design
+
+Click [here](/userInterfaceDesign/README.md) for a high-fidelity interactive mockup of our application.
+
 Thank you for viewing our work!
