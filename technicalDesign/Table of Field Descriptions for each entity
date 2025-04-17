@@ -1,40 +1,40 @@
-| Property | Data Type   | Default| Nullable| Relationships  | Note| 
-|-----------|-----------|-----------|-----------|-------|
-|      |user|Int| Auto_INCREMENT|NO | Primary Key|     |
-| User |user_name |NVARCHAR(50) | Null| NO|     |      |
-|      |pasword_hash |NVARCHAR(255) | Null| No|   |    |
-|      |Email|NVARCHAR(100)|Null| NO |      |          |
-|      |Is_ Admain|BIt| 0|                    |    |   | 
-|
-|         |Product_ ID | Int | AUTO_INCREMENT | No| Primary Key|    | 
-|         |Name| NVARCHAR(100)| NULL | NO|   |                      |
-| Products|Description| NVARCHAR(500) |NULL| no|   |                |
-|         |Price |	DECIMAL(10,2) | 0.00 | No |   |                 |
-|         |is_ sold | BIT | 0 | No |   |                            |
-|
-|           |Cart_item_id|INT | AUTO_INCREMENT | No|  Primary Key |    |
-| Cart_items|Use_id| INT | NULL| No|  Foreign Key → Users(user_id)|     |
-|           |Product_Id| INT | NULL| N0|   |Foreign Key → Products(product_id)|
-|           |Quantity| INT | 1 | No|      |           |
-|
-|       |Order_ ID| INT | AUTO_INCREMENT| 	No	| Primary Key |   |
-|       |Uesr_ID |INT |NULL | No |Foreign Key → Users(user_id) |    |
-|       |order_date |DATETIME|CURRENT_TIMESTAMP| No | |     |
-|       |shipping_address| NVARCHAR(255) |NULL| No |    |    |
-| Orders|shipping_speed| NVARCHAR(20) | Ground| No|   |   |
-|       |subtotal| DECIMAL(10,2)| 0.00| NO| | |
-|       | Tax | DECIMAL(10,2)| 0.00| No || |
-|       |shipping_cost| DECIMAL(10,2)| 0.00|No |  | |
-|       | Total |DECIMAL(10,2)| 0.00| No | | | 
-|
-|      | INT | AUTO_INCREMENT| No| Primary Key|  |   |
-|      | INT| NULL| NO| Foreign Key → Orders(order_id)|    |      |
-| order_Items |INT | NULL |NO | Foreign Key → Products(product_id)|   |  | 
-|       | INT| 1 | NO |     |  |    |
-|       | DECIMAL(10,2| | 0.00 | No|    |    |
-|
-|        | INT| AUTO_INCREMENT | NO | Primary Key|     |     |
-|        | INT| NULL | No | Foreign Key → Orders(order_id)|    |    |
-| Payment | INT| NULL| No | Foreign Key → Users(user_id)|   |  |
-|         | CHAR(4)| NULL | No |    |   |   |
-|         | DATETIME| CURRENT_TIMESTAMP|No|    |   |      |
+| Property        | Data Type       | Default          | Nullable | Relationships                      | Note         |
+|----------------|-----------------|------------------|----------|------------------------------------|--------------|
+|                | user_id         | INT              | AUTO_INCREMENT | NO     | Primary Key                     |              |
+| Users          | user_name       | NVARCHAR(50)     | NULL     | NO                                 |              |
+|                | password_hash   | NVARCHAR(255)    | NULL     | NO                                 |              |
+|                | email           | NVARCHAR(100)    | NULL     | NO                                 |              |
+|                | is_admin        | BIT              | 0        | NO                                 |              |
+|                |                 |                  |          |                                    |              |
+|                | product_id      | INT              | AUTO_INCREMENT | NO     | Primary Key                     |              |
+|                | name            | NVARCHAR(100)    | NULL     | NO                                 |              |
+| Products       | description     | NVARCHAR(500)    | NULL     | NO                                 |              |
+|                | price           | DECIMAL(10,2)    | 0.00     | NO                                 |              |
+|                | is_sold         | BIT              | 0        | NO                                 |              |
+|                |                 |                  |          |                                    |              |
+|                | cart_item_id    | INT              | AUTO_INCREMENT | NO     | Primary Key                     |              |
+| Cart_items     | user_id         | INT              | NULL     | NO     | Foreign Key → Users(user_id)     |              |
+|                | product_id      | INT              | NULL     | NO     | Foreign Key → Products(product_id)|              |
+|                | quantity        | INT              | 1        | NO                                 |              |
+|                |                 |                  |          |                                    |              |
+|                | order_id        | INT              | AUTO_INCREMENT | NO     | Primary Key                     |              |
+|                | user_id         | INT              | NULL     | NO     | Foreign Key → Users(user_id)     |              |
+|                | order_date      | DATETIME         | CURRENT_TIMESTAMP | NO |                            |              |
+|                | shipping_address| NVARCHAR(255)    | NULL     | NO                                 |              |
+| Orders         | shipping_speed  | NVARCHAR(20)     | Ground   | NO                                 |              |
+|                | subtotal        | DECIMAL(10,2)    | 0.00     | NO                                 |              |
+|                | tax             | DECIMAL(10,2)    | 0.00     | NO                                 |              |
+|                | shipping_cost   | DECIMAL(10,2)    | 0.00     | NO                                 |              |
+|                | total           | DECIMAL(10,2)    | 0.00     | NO                                 |              |
+|                |                 |                  |          |                                    |              |
+|                | order_item_id   | INT              | AUTO_INCREMENT | NO     | Primary Key                     |              |
+|                | order_id        | INT              | NULL     | NO     | Foreign Key → Orders(order_id)   |              |
+| Order_Items    | product_id      | INT              | NULL     | NO     | Foreign Key → Products(product_id)|              |
+|                | quantity        | INT              | 1        | NO                                 |              |
+|                | price_each      | DECIMAL(10,2)    | 0.00     | NO                                 |              |
+|                |                 |                  |          |                                    |              |
+|                | payment_id      | INT              | AUTO_INCREMENT | NO     | Primary Key                     |              |
+|                | order_id        | INT              | NULL     | NO     | Foreign Key → Orders(order_id)   |              |
+| Payment        | user_id         | INT              | NULL     | NO     | Foreign Key → Users(user_id)     |              |
+|                | card_last4      | CHAR(4)          | NULL     | NO                                 |              |
+|                | payment_date    | DATETIME         | CURRENT_TIMESTAMP | NO |                            |              |
