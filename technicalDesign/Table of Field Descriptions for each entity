@@ -1,0 +1,40 @@
+| Property | Data Type   | Default| Nullable| Relationshipes  | Note| 
+|-----------|-----------|-----------|-----------|-------|-----------|
+|      |user|Int| Auto_INCREMENT|NO | Primary Key|
+| User |user_name |NVARCHAR(50) | Null| NO|
+|      |pasword_hash |NVARCHAR(255) | Null| No| 
+|      |Email|NVARCHAR(100)|Null| NO |
+|      |Is_ Admain|BIt| 0|
+|
+|         |Product_ ID | Int | AUTO_INCREMENT | No| Primary Key|
+|         |Name| NVARCHAR(100)| NULL | NO|   |
+| Products|Description| NVARCHAR(500) |NULL| no|   |
+|         |Price |	DECIMAL(10,2) | 0.00 | No |   |
+|         |is_ sold | BIT | 0 | No |   |
+|
+|           |Cart_item_id|INT | AUTO_INCREMENT | No|  Primary Key |
+| Cart_items|Use_id| INT | NULL| No|  Foreign Key → Users(user_id)|
+|           |Product_Id| INT | NULL| N0|   |Foreign Key → Products(product_id)|
+|           |Quantity| INT | 1 | No|      |
+|
+|       |Order_ ID| INT | True| Admin promotes a user to admin |
+|       |Uesr_ID |INT | True| Admin promotes a user to admin |
+|       |order_date |DATETIME| True| Admin promotes a user to admin |
+|       |shipping_address| NVARCHAR(255) | True| Admin promotes a user to admin |
+| Orders|shipping_speed| NVARCHAR(20) | True| Admin promotes a user to admin |
+|       |subtotal| DECIMAL(10,2)| True| Admin promotes a user to admin |
+|       | Tax | DECIMAL(10,2)| True| Admin promotes a user to admin |
+|       |shipping_cost| DECIMAL(10,2)| True| Admin promotes a user to admin |
+|       | Total |DECIMAL(10,2)| True| Admin promotes a user to admin |
+
+|      | INT | AUTO_INCREMENT| No| Primary Key|
+|      | INT| NULL| NO| Foreign Key → Orders(order_id)|
+| order_Items |NULL |NO | Foreign Key → Products(product_id)|
+|       | INT| 1 | NO |     |
+|       | DECIMAL(10,2| | 0.00 | No|    |
+|
+|        | INT| AUTO_INCREMENT | NO | Primary Key|
+|        | INT| NULL | No | Foreign Key → Orders(order_id)|
+| Payemnt | INT| NULL| No | Foreign Key → Users(user_id)
+|         | CHAR(4)| NULL | No |
+|         | DATETIME| CURRENT_TIMESTAMP|No|
