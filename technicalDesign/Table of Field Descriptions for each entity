@@ -1,5 +1,5 @@
 | Property | Data Type   | Default| Nullable| Relationships  | Note| 
-|-----------|-----------|-----------|-----------|-------|-----------|
+|-----------|-----------|-----------|-----------|-------|
 |      |user|Int| Auto_INCREMENT|NO | Primary Key|     |
 | User |user_name |NVARCHAR(50) | Null| NO|     |      |
 |      |pasword_hash |NVARCHAR(255) | Null| No|   |    |
