@@ -1,4 +1,4 @@
-| Entity       |                   | Value                                       |
+| Entity       | Property          | Value                                       |
 |--------------|-------------------|---------------------------------------------|
 | Users        | user_id           | 1                                           |
 |              | user_name         | Bray29                                      |
@@ -28,7 +28,7 @@
 | Products     | product_id        | 3                                           |
 |              | name              | Rainbow Shell Bracelet                      |
 |              | description       | Made out of recycled paper                  |
-|              | price             | 19.99                                       |
+|              | price             | 24.99                                       |
 |              | is_sold           | 1                                           |
 | Cart_Items   | cart_item_id      | 1                                           |
 |              | user_id           | 1                                           |
@@ -60,6 +60,15 @@
 |              | tax               | 1.20                                        |
 |              | shipping_cost     | 0.00                                        |
 |              | total             | 21.19                                       |
+| Orders       | order_id          | 3                                           |
+|              | user_id           | 2                                           |
+|              | order_date        | 2025-04-15 17:30:00                         |
+|              | shipping_address  | 456 Loop Rd, Repurpose City                |
+|              | shipping_speed    | Two-Day                                     |
+|              | subtotal          | 49.99                                       |
+|              | tax               | 3.00                                        |
+|              | shipping_cost     | 10.00                                       |
+|              | total             | 62.99                                       |
 | Order_Items  | order_item_id     | 1                                           |
 |              | order_id          | 1                                           |
 |              | product_id        | 1                                           |
@@ -85,3 +94,8 @@
 |              | user_id           | 3                                           |
 |              | payment_date      | 2025-04-13 10:16:30                         |
 |              | last4_card        | 9876                                        |
+| Payment      | payment_id        | 3                                           |
+|              | order_id          | 3                                           |
+|              | user_id           | 2                                           |
+|              | payment_date      | 2025-04-15 17:31:00                         |
+|              | last4_card        | 5555                                        |
