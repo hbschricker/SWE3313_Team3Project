@@ -8,3 +8,5 @@
   The programming language Java emerged in 1995 from Sun Microsystems. Java has grown to be one of the most commonly used languages. It is known to be reliable, which is why many well-known and trusted companies use the language. 
 ### Framework:
 - #### The framework chosen is Spring Boot. The reasoning behind selecting this framework is: 
+	- It pairs well with Java
+   	- 
