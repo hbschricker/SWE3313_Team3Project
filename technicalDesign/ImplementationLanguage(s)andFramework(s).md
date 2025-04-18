@@ -15,7 +15,7 @@
    	- Spring has available resources to aid in the use of Spring
    	- Includes Open Source Software support (OSS), where they update security and fix bugs in the software
   #### About [Spring Boot](https://spring.io/projects/spring-boot#overview):
-	Spring allows for an easy path to production-grade applications. They offer many helpful resources to understand how to use Spring Boot and to help develop applications. They offer a Wiki page as well as Guides, samples to practice, videos, and OSS support.   
+ Spring allows for an easy path to production-grade applications. They offer many helpful resources to understand how to use Spring Boot and to help develop applications. They offer a Wiki page as well as Guides, samples to practice, videos, and OSS support.   
  - Learn more about Spring Boot guides, [click here](https://spring.io/projects/spring-boot#learn)
  - Learn more about Spring Boot support, [click here](https://spring.io/projects/spring-boot#support)
  - Learn more about Spring Boot samples, [click here](https://spring.io/projects/spring-boot#samples)
