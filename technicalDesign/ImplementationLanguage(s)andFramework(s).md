@@ -4,7 +4,7 @@
 	- All of the group members have prior experience coding and creating programs in Java
    	- Java has many tools and libraries to aid in the development process
 	- Java is not platform-specific; therefore, the code is able to be run across many platforms.
-   #### (About Java)[https://www.java.com/en/download/help/whatis_java.html]:
+   #### [About Java](https://www.java.com/en/download/help/whatis_java.html):
   The programming language Java emerged in 1995 from Sun Microsystems. Java has grown to be one of the most commonly used languages. It is known to be reliable, which is why many well-known and trusted companies use the language. To ensure their application is accesible to all, there are many versions of Java that are able to be used on any operating system. There are plenty of resources on their website, including answers to commonly asked questions, and explanations of different errors that can occur. 
 ### Framework:
 - #### The framework chosen is Spring Boot. The reasoning behind selecting this framework is: 
