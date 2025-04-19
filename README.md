@@ -37,4 +37,8 @@ Click [here](/requirements/README.md) to view our project requirements.
 
 Click [here](/userInterfaceDesign/README.md) for a high-fidelity interactive mockup of our application.
 
+### Technical Design
+
+Click [here](/technicalDesign/README.md) to view our project technical design.
+
 Thank you for viewing our work!
