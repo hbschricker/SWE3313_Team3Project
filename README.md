@@ -19,7 +19,7 @@ Our project is being developed by a team of four dedicated students each contrib
 
 ### Technology Section
 
-Click [here](TechnologyDesc.md) for a detailed explanation of the technologies we are using and why we chose them.
+Click [here](TechnologyDescription.md) for a detailed explanation of the technologies we are using and why we chose them.
 
 ### Gantt Chart
 
