@@ -28,4 +28,4 @@ Click [here](CodingStyleGuide.md) for a list of coding style instructions we wil
 
 ## Technical Design Video Presentation:
 
-Click [here](https://www.loom.com/share/a516dd5db0f24ba2bb31ad3419b29394) for a video presentation of our technical design section.
+Click [here](https://www.loom.com/share/1e9338f43da545ff98b789356ebf7c1e) for a video presentation of our technical design section.
