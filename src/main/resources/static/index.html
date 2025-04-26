@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Store</title>
+    <style>
+        /* Basic CSS for layout and styling - feel free to customize! */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .hero {
+            background-color: #e0f7fa; /* Example background color */
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff; /* Example button color */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .feature {
+            margin-bottom: 30px;
+        }
+        .gallery {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .gallery-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery-images img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .testimonial blockquote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .testimonial cite {
+            font-style: normal;
+            font-weight: bold;
+        }
+        .call-to-action {
+            background-color: #e0f7fa; /* Example background color */
+            padding: 60px 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Preethis Online Store</h1>
+            <p>Discover Unique and High-Quality Products</p>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Shop the Latest Trends</h1>
+                <p>Find the perfect items for your style.</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Wide Selection</h3>
+                <p>We offer a variety of products to suit every taste.</p>
+            </div>
+            <div class="feature">
+                <h3>Fast Shipping</h3>
+                <p>Get your order delivered quickly and reliably.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Checkout</h3>
+                <p>Your transactions are safe and secure with us.</p>
+            </div>
+        </section>
+
+        <section id="products" class="gallery">
+            <h2>Product Gallery</h2>
+            <div class="gallery-images">
+                <a href="product1.html">
+                    <img src="thumbnails/product1.jpeg" alt="Product 1">
+                </a>
+                <img src="thumbnails/product2.jpeg" alt="Product 2">
+                <img src="thumbnails/product3.jpeg" alt="Product 3">
+                <img src="thumbnails/product4.jpeg" alt="Product 4">
+                <img src="thumbnails/product5.jpeg" alt="Product 5">
+                <img src="thumbnails/product6.jpeg" alt="Product 6">
+            </div>
+            <p><a href="products.jsp">View all products</a></p> <%-- Link to a separate product listing page --%>
+        </section>
+
+        <section class="testimonial">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>"I love the quality of the products and the fast shipping.  Great store!"</p>
+                <cite>- Jane Smith</cite>
+            </blockquote>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Ready to Shop?</h2>
+            <p>Browse our collection and find your new favorites today!</p>
+            <a href="register.jsp" class="cta-button">Create an Account</a>  <%-- Link to registration page --%>
+        </section>
+
+        <footer>
+            <p>&copy; <%= java.time.Year.now().getValue() %> My Online Store. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Jewelry</title>
+		<style type="text/css">
+body {
+            font-family: Arial, Monospace;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+
+        /* Header Section */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #fff;
+        }
+
+        .logo {
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .site-name {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .icons span {
+            font-size: 20px;
+            margin-left: 16px;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 12px 24px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav button {
+            background-color: lightgray;
+            border: none;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav .icons {
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, button {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4e9fff;
+        }
+
+        button {
+            background-color: #4e9fff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #87CEFA;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info p {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }		</style>
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header>
+			<div class="top-bar">
+				<img alt="Logo" class="logo" src="/images/logo.jpg" />
+				<div class="icons">
+					<span>🔍</span> <!-- Search --><span>👤</span> <!-- User --><span>🛒</span> <!-- Cart --></div>
+			</div>
+			<nav>
+				<button> <a href="landingpage.html">Home</a></button>
+				<button>About Us</button>
+                <button>Contact Us</button>
+            </nav>
+		</header>
+		<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 500px">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="" src="/thumbnails/product6.jpeg" style="width: 400px; height: 300px;" /></td>
+					<td>
+						<table border="0" cellpadding="1" cellspacing="1" style="width: 500px">
+							<tbody>
+								<tr>
+									<td>
+										Rainbow Shell Bead Bracelet</td>
+								</tr>
+								<tr>
+									<td>
+										$4.99</td>
+								</tr>
+								<tr>
+									<td>
+										<p>
+                                            This eco-friendly bracelet is crafted from recycled paper, offering a unique 
+                                            and sustainable accessory. Hand-rolled and lightweight, it combines vibrant 
+                                            colors with a stylish, environmentally conscious design.
+                                        </p>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>
+						&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+	</body>
+</html>
