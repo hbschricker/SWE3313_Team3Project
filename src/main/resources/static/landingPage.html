@@ -4,227 +4,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewelry</title>
+    <title>The BaeBijoux</title>
     <style>
         body {
-            font-family: Arial, Monospace;
-            margin: 0;
-            padding: 0;
-            background-color: lightgray;
+          font-family: Arial, Monospace;
+          margin: 0;
+          padding: 0;
+          background-color: lightgray;
         }
 
         /* Header Section */
         .top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 20px;
-            background-color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 20px;
+          background-color: #fff;
+          position: relative;
         }
 
         .logo {
-            height: 100px;
-            margin-right: 20px;
+          height: 100px;
+          margin-right: 20px;
         }
 
         .site-name {
-            font-size: 24px;
-            color: #333;
-            font-weight: bold;
+          font-size: 24px;
+          color: #333;
+          font-weight: bold;
+        }
+
+        .icons {
+          display: flex;
+          align-items: center;
+          position: relative;
         }
 
         .icons span {
-            font-size: 20px;
-            margin-left: 16px;
+          font-size: 24px;
+          margin-left: 16px;
+          cursor: pointer;
+          position: relative;
+        }
+
+        /* Search bar hidden by default */
+        .search-bar {
+          display: none;
+          position: absolute;
+          top: 50px;
+          right: 100px;
+          background-color: white;
+          padding: 8px;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar input {
+          padding: 8px;
+          font-size: 16px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          width: 250px;
+        }
+
+        /* Show search bar when hovering over the search icon */
+        .search-hover-area {
+          position: relative;
+        }
+
+        .search-hover-area:hover .search-bar {
+          display: block;
         }
 
         nav {
-            background-color: #eee;
-            padding: 12px 24px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
+          background-color: #eee;
+          padding: 12px 24px;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
         }
 
         nav button {
-            background-color: lightgray;
-            border: none;
-            font-size: 16px;
-            margin-right: 20px;
-            cursor: pointer;
-            padding: 10px;
-            transition: background-color 0.3s;
-        }
-
-        nav .icons {
-            font-size: 24px;
+          background: none;
+          border: none;
+          font-size: 14px;
+          cursor: pointer;
+          padding: 10px;
+          transition: background-color 0.3s;
+          background-color: lightgray;
+          border: none;
+          font-size: 16px;
+          margin-right: 20px;
         }
 
         form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        input, button {
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            width: 100%;
-            max-width: 400px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
         }
 
         input:focus {
-            outline: none;
-            border-color: #4e9fff;
+          outline: none;
+          border-color: #4e9fff;
         }
 
         button {
-            background-color: #4e9fff;
-            color: white;
-            cursor: pointer;
-            border: none;
+          background-color: #4e9fff;
+          color: white;
+          cursor: pointer;
+          border: none;
         }
 
         button:hover {
-            background-color: #87CEFA;
+          background-color: #87CEFA;
         }
 
         h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            font-weight: bold;
+          margin-bottom: 20px;
+          font-size: 24px;
+          font-weight: bold;
         }
 
         /* Product Grid */
         .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          padding: 20px;
         }
 
         /* Product Card */
         .product-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          transition: transform 0.3s ease-in-out;
         }
 
         .product-card:hover {
-            transform: scale(1.05);
+          transform: scale(1.05);
         }
 
         .product-card img {
-            width: 350px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
+          width: 350px;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 8px;
         }
 
         .info p {
-            font-size: 14px;
-            font-weight: bold;
-            margin: 5px 0;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 5px 0;
         }
 
         @media (max-width: 480px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
+          .product-grid {
+            grid-template-columns: 1fr;
+          }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="top-bar">
-            <img src="/images/logo.jpg" class="logo" alt="Logo">
-            <div class="icons">
-                <span>&#128269;</span> <!-- Search -->
-                <span>&#128100;</span> <!-- User -->
-                <span>&#128722;</span> <!-- Cart -->
+
+<!-- Header Section -->
+<header>
+    <div class="top-bar">
+        <img src="images/logo.jpg" class="logo" alt="Logo">
+        
+        <div class="icons">
+            <div class="search-hover-area">
+                <span>&#128269;</span> <!-- Search Icon -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+                </div>
+            </div>
+            <span>&#128100;</span> <!-- User Icon -->
+            <span>&#128722;</span> <!-- Cart Icon -->
+        </div>
+    </div>
+
+    <nav>
+        <button>Home</button>
+        <button>About Us</button>
+        <button>Contact Us</button>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+    <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="/images/images1.jpg" alt="Product Name">
+            <div class="info">
+                <p>$8.99</p>
+                <p>Product Name <span>&#128722;</span></p>
             </div>
         </div>
-        <nav>
-            <button>Home</button>
-            <button>About Us</button>
-            <button>Contact Us</button>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="product-grid">
-            <!-- Product Card 1 -->
-            <div class="product-card">
-                <a href="product1.html">
-                    <img src="thumbnails/product1.jpeg" alt="Product 1">
-                </a>
-                <div class="info">
-                    <p>Rainbow Shell Bead Necklace <span>&#128722;</span></p>
-                    <p>$8.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 2 -->
-            <div class="product-card">
-                <a href="product2.html">
-                    <img src="/thumbnails/product2.jpeg" alt="Light as a feather necklace">
-                </a>
-                <div class="info">
-                    <p>Light as a Feather Necklace <span>&#128722;</span></p>
-                    <p>$9.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="product-card">
-                <a href="product3.html">
-                    <img src="/thumbnails/product3.jpeg" alt="Steeze Skater Ring">
-                </a>
-                <div class="info">
-                    <p>Steeze Skater Ring <span>&#128722;</span></p>
-                    <p>$6.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="product-card">
-                <a href="product4.html">
-                    <img src="/thumbnails/product4.jpeg" alt="Under the Sea Stacked Bracelet">
-                </a>
-                <div class="info">
-                    <p>Under the Sea Stacked Bracelet <span>&#128722;</span></p>
-                    <p>$7.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 5 -->
-            <div class="product-card">
-                <a href="product5.html">
-                    <img src="/thumbnails/product5.jpeg" alt="Stacked Ribbon Earrings">
-                </a>
-                <div class="info">
-                    <p>Stacked Ribbon Earrings <span>&#128722;</span></p>
-                    <p>$3.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 6 -->
-            <div class="product-card">
-                <a href="product6.html">
-                    <img src="/thumbnails/product6.jpeg" alt="Rainbow Shell Bead Bracelet">
-                </a>
-                <div class="info">
-                    <p>Rainbow Shell Bead Bracelet <span>&#128722;</span></p>
-                    <p>$4.99</p>
-                </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="/images/images2.jpg" alt="Light as a feather necklace">
+            <div class="info">
+                <p>Light as a feather necklace <span>&#128722;</span></p>
+                <p>$9.99</p>
             </div>
         </div>
-    </main>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="/images/images3.jpg" alt="Steeze skater ring">
+            <div class="info">
+                <p>Steeze skater ring <span>&#128722;</span></p>
+                <p>$6.99</p>
+            </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="/images/images4.jpg" alt="Light as a feather necklace">
+            <div class="info">
+                <p>Light as a feather necklace <span>&#128722;</span></p>
+                <p>$9.99</p>
+            </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <img src="/images/images5.jpg" alt="Under the sea stacked bracelet">
+            <div class="info">
+                <p>Under the sea stacked bracelet <span>&#128722;</span></p>
+                <p>$7.99</p>
+            </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <img src="/images/images6.jpg" alt="Rainbow shell bead bracelet">
+            <div class="info">
+                <p>Rainbow shell bead bracelet <span>&#128722;</span></p>
+                <p>$6.99</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Search Function -->
+<script>
+    function searchProducts() {
+      var input = document.getElementById('searchInput').value.toLowerCase();
+      var products = document.getElementsByClassName('product-card');
+
+      for (var i = 0; i < products.length; i++) {
+        var info = products[i].getElementsByClassName('info')[0];
+        if (info.innerText.toLowerCase().includes(input)) {
+          products[i].style.display = "";
+        } else {
+          products[i].style.display = "none";
+        }
+      }
+    }
+</script>
+
 </body>
 </html>
