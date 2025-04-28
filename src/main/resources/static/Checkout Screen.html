@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - The BaeBijoux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .store-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-left: 15px; /* Add some space between the logo and store name */
+        }
+
+        .icons span {
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #87CEFA;
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .checkout-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            border-style: solid;
+        }
+
+        .order-summary h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Item Section */
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 16px;
+            align-items: center;
+        }
+
+        .item-name {
+            flex: 1;
+        }
+
+        .item-name span {
+            display: block;
+        }
+
+        .quantity-controls {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between
+            width: 50px;
+            font-size: 18px;
+
+        }
+
+        .item-price {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        .item-price span {
+            margin-right: 10px;
+        }
+
+        .trash-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Total Section */
+        .total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .total span:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .checkout-btn {
+            width: 45%;
+            padding: 15px;
+            background-color: #d3d3d3;
+            color: black;
+            border: 0px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background-color: #87CEFA;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .order-summary h3 {
+                font-size: 20px;
+            }
+
+            .item span {
+                font-size: 14px;
+            }
+
+            .total {
+                font-size: 16px;
+            }
+
+            .checkout-btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <img src="/images/logo.jpg" class="logo" alt="Logo">
+        <div class="store-name">The BaeBijoux</div> <!-- Store name added here -->
+        <div class="icons">
+            <span>&#128100;</span> <!-- User -->
+            <span>&#128722;</span> <!-- Cart -->
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <div class="checkout-container">
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+
+            <div class="item">
+                <div class="item-name">
+                    <span>Steeze Skater Ring</span>
+                    <div class="quantity-controls">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$6.99</span>
+                    <span class="trash-icon">&#128465;</span> <!-- Trashcan Icon -->
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <span>Light as a Feather Necklace</span>
+                    <div class="quantity-controls">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$9.99</span>
+                    <span class="trash-icon">&#128465;</span> <!-- Trashcan Icon -->
+                </div>
+            </div>
+
+            <div class="total">
+                <span>Total</span>
+                <span>$16.98</span>
+                <span class="trash-icon">&#128465;</span> <!-- Trashcan Icon for total -->
+            </div>
+        </div>
+        <a href="Shipping.html">
+            <button class="checkout-btn">Pay Now</button>
+
+</main>
+        </a>
+
+    </div>
+</main>
+
+
+</html>
