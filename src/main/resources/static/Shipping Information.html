@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information - The BaeBijoux</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .store-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-left: 15px;
+        }
+
+        .icons span {
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #87CEFA;
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Shipping Options Section */
+        .shipping-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+        }
+
+        .shipping-container h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .shipping-option {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        /* Shipping Information Form Section */
+        .shipping-form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 55%;
+        }
+
+        .shipping-form-container h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Billing Button */
+        .billing-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #d3d3d3;
+            color: black;
+            border: 2px solid #333;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .billing-btn:hover {
+            background-color: #87CEFA;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .shipping-container {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .shipping-form-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <img src="/images/logo.jpg" class="logo" alt="Logo">
+        <div class="store-name">The BaeBijoux</div>
+        <div class="icons">
+            <span>&#128100;</span> <!-- User -->
+            <span>&#128722;</span> <!-- Cart -->
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Shipping Options Section -->
+    <div class="shipping-container">
+        <h3>Shipping Options</h3>
+        <div class="shipping-option">
+            <span>Overnight</span>
+            <span>$29.00</span>
+        </div>
+        <div class="shipping-option">
+            <span>3-Day</span>
+            <span>$19.00</span>
+        </div>
+        <div class="shipping-option">
+            <span>Ground</span>
+            <span>Free</span>
+        </div>
+    </div>
+
+    <!-- Shipping Information Form Section -->
+    <div class="shipping-form-container">
+        <h3>Shipping Information</h3>
+        <form>
+            <div class="form-group">
+                <label for="territory">Counter / Territory</label>
+                <select id="territory" name="territory">
+                    <option value="territory1">Territory 1</option>
+                    <option value="territory2">Territory 2</option>
+                    <option value="territory3">Territory 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address Line</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="post-code">Post Code</label>
+                <input type="text" id="post-code" name="post-code" placeholder="Enter your post code" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State / Province</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state or province" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Telephone Number</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number" required>
+            </div>
+            <a href="payment.html">
+                <button type="button" class="billing-btn">Billing Information</button>
+            </a>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
