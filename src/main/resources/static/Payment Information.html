@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Information- The BaeBijoux</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Header Section */
+    header {
+        background-color: #fff;
+        padding: 15px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .store-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-left: 15px;
+    }
+
+    .icons span {
+        font-size: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        margin: 0 15px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #87CEFA;
+    }
+
+    /* Main Section */
+  main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+   }
+    /* Payment Information Section */
+    .payment-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+    }
+
+    .payment-container h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    /* Payment Details Section */
+    .payment-summary {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .payment-summary span {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    /* Confirm Order Button */
+    .confirm-btn {
+        width: 100%;
+        padding: 15px;
+        background-color: #d3d3d3;
+        color: black;
+        border: 2px solid #333;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .confirm-btn:hover {
+        background-color: #87CEFA;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 600px) {
+        .payment-container {
+            width: 100%;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <img src="/images/logo.jpg" class="logo" alt="Logo">
+    <div class="store-name">The BaeBijoux</div>
+    <div class="icons">
+      <span>&#128100;</span> <!-- User -->
+      <span>&#128722;</span> <!-- Cart -->
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Payment Information Section -->
+  <div class="payment-container">
+    <h3>Payment Information</h3>
+    <form>
+      <!-- Name on Card -->
+      <div class="form-group">
+        <label for="card-name">Name on Card</label>
+        <input type="text" id="card-name" name="card-name" placeholder="Enter name on card" required>
+      </div>
+
+      <!-- Card Number -->
+      <div class="form-group">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+      </div>
+
+      <!-- Expiration Date -->
+      <div class="form-group">
+        <label for="expiration-date">Expiration Date</label>
+        <input type="month" id="expiration-date" name="expiration-date" required>
+      </div>
+
+      <!-- Security Code (CVV) -->
+      <div class="form-group">
+        <label for="security-code">Security Code (CVV)</label>
+        <input type="text" id="security-code" name="security-code" placeholder="Enter CVV" required>
+      </div>
+
+      <!-- Zip/Postal Code -->
+      <div class="form-group">
+        <label for="zip-code">Zip / Postal Code</label>
+        <input type="text" id="zip-code" name="zip-code" placeholder="Enter your zip/postal code" required>
+      </div>
+
+      <!-- Payment Summary -->
+      <div class="payment-summary">
+                <span>
+                    <strong>Subtotal:</strong>
+                    <span>$16.98</span>
+                </span>
+        <span>
+                    <strong>Tax (0.6):</strong>
+                    <span>$1.02</span>
+                </span>
+        <span>
+                    <strong>Total Amount:</strong>
+                    <span>$18.00</span>
+                </span>
+      </div>
+
+      <!-- Confirm Order Button -->
+      <a href="Confirm Order.html">
+      <button type="button" class="confirm-btn">Confirm Order</button>
+      </a>
+    </form>
+  </div>
+</main>
+
+</body>
+</html>
