@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt - The BaeBijoux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .store-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-left: 15px;
+        }
+
+        .icons span {
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #87CEFA;
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .checkout-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+        }
+
+        .checkout-container h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Item list */
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .item-name {
+            text-align: left;
+            flex: 1;
+        }
+
+        .item-price {
+            text-align: right;
+            flex: 1;
+        }
+
+        /* Payment Summary Section */
+        .payment-summary {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .payment-summary .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .payment-summary .summary-item span {
+            text-align: right;
+        }
+
+        /* Simplified Address & Payment Information Sections */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #f1f1f1;
+            border: none;
+        }
+
+        /* Complete Order Button */
+        .complete-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #d3d3d3;
+            color: black;
+            border: 2px solid #333;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .complete-btn:hover {
+            background-color: #87CEFA;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .checkout-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <img src="/images/logo.jpg" class="logo" alt="Logo">
+        <div class="store-name">The BaeBijoux</div>
+        <div class="icons">
+            <span>&#128100;</span> <!-- User -->
+            <span>&#128722;</span> <!-- Cart -->
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+</header>
+<a href="index.html">Back to Home</a>
+<main>
+    <!-- Receipt Information Section -->
+    <div class="checkout-container">
+        <h3>Receipt</h3>
+
+        <!-- Order Item(s) -->
+        <div class="item">
+            <span class="item-name">Steeze Skater Ring</span>
+            <span class="item-price">$6.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Light as a Feather Necklace</span>
+            <span class="item-price">$9.99</span>
+        </div>
+
+        <!-- Payment Summary -->
+        <div class="payment-summary">
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span>$16.98</span>
+            </div>
+            <div class="summary-item">
+                <span>Tax (0.6 x Subtotal):</span>
+                <span>$1.02</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping Fee:</span>
+                <span>$29.99</span>
+            </div>
+            <div class="summary-item">
+                <span>Grand Total:</span>
+                <span>$47.99</span>
+            </div>
+        </div>
+
+
+
+        <!-- Credit Card Information -->
+        <div class="form-group">
+            <label>Card Number: xxxxxxxxxxxx4921 </label>
+
+            <!-- Shipping Address -->
+
+            <div class="form-group">
+                <label>Shipping Address: Carrie Farm, Alpharetta, GA 30056</label>
+
+            </div>
+
+        <!-- OK Button -->
+            <a href="index.html">
+                <button class="complete-btn">OK</button>
+            </a>
+    </div>
+</main>
+
+</body>
+</html>
