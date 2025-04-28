@@ -43,6 +43,6 @@ Click [here](/technicalDesign/README.md) to view our project technical design.
 
 ### Implementation Plan
 
-Click [here](/implementationPlanREADME.md) to view our implementation plan.
+Click [here](/implementationPlan/README.md) to view our implementation plan.
 
 Thank you for viewing our work!
