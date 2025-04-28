@@ -16,7 +16,7 @@ git clone -b main https://github.com/hbschricker/SWE3313_Team3Project.git
 3. Navigate to the cloned project folder.
 4. Build and run the following command via Maven:
 ```
-mvn clean install -Dmaven.test.skip=true -DskipTests=true springboot:run
+mvn clean install -Dmaven.test.skip=true -DskipTests=true spring-boot:run
 ```
 5. Once successfully  run, go to the following page:
 ```
