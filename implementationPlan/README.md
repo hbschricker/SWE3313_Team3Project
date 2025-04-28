@@ -13,12 +13,12 @@ Steps:
 ```
 git clone -b main https://github.com/hbschricker/SWE3313_Team3Project.git
 ```
-3. Navigate to the cloned project folder.
+3. Navigate to the cloned project folder where the pom.xml file is located.
 4. Build and run the following command via Maven:
 ```
 mvn clean install -Dmaven.test.skip=true -DskipTests=true spring-boot:run
 ```
-5. Once successfully  run, go to the following page:
+5. Once successfully run, go to the following page:
 ```
 http://localhost:8080/
 ```
