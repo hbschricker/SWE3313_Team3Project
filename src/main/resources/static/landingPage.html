@@ -67,11 +67,6 @@
           width: 250px;
         }
 
-        /* Show search bar when hovering over the search icon */
-        .search-hover-area {
-          position: relative;
-        }
-
         .search-hover-area:hover .search-bar {
           display: block;
         }
@@ -87,13 +82,10 @@
         nav button {
           background: none;
           border: none;
-          font-size: 14px;
+          font-size: 16px;
           cursor: pointer;
           padding: 10px;
-          transition: background-color 0.3s;
           background-color: lightgray;
-          border: none;
-          font-size: 16px;
           margin-right: 20px;
         }
 
@@ -109,14 +101,17 @@
         }
 
         button {
-          background-color: #4e9fff;
-          color: white;
+          background-color: lightgray;
+          color: black;
           cursor: pointer;
           border: none;
+          padding: 10px 20px;
+          border-radius: 6px;
+          font-size: 14px;
         }
 
         button:hover {
-          background-color: #87CEFA;
+          background-color: #d3d3d3;
         }
 
         h2 {
@@ -176,105 +171,109 @@
         <div class="store-name">The BaeBijoux</div>
 
         <div class="icons">
-            <!-- Search Icon - Hover to Show Search Bar -->
             <div class="search-hover-area">
-                <span>&#128269;</span> <!-- Search icon -->
+                <span>&#128269;</span>
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
                 </div>
             </div>
 
-            <!-- User Icon (Link to Login Page) -->
             <a href="login.html">
-                <span>&#128100;</span> <!-- User icon -->
+                <span>&#128100;</span>
             </a>
 
-            <!-- Cart Icon (Link to CheckoutScreen) -->
             <a href="CheckoutScreen.html">
-                <span>&#128722;</span> <!-- Cart icon -->
+                <span>&#128722;</span>
             </a>
         </div>
     </div>
-        <nav>
-            <button onclick="location.href='index.html'">Home</button>
-            <button onclick="location.href='aboutus.html'">About Us</button>
-            <button onclick="location.href='contactUs.html'">Contact Us</button>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="product-grid">
-            <!-- Product Card 1 -->
-            <div class="product-card">
-                <a href="product1.html">
-                    <img src="thumbnails/product1.jpeg" alt="Product 1">
-                </a>
-                <div class="info">
-                    <p>Rainbow Shell Bead Necklace <span>&#128722;</span></p>
-                    <p>$8.99</p>
-                </div>
-            </div>
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='aboutus.html'">About Us</button>
+        <button onclick="location.href='contactUs.html'">Contact Us</button>
+    </nav>
+</header>
 
-            <!-- Product Card 2 -->
-            <div class="product-card">
-                <a href="product2.html">
-                    <img src="/thumbnails/product2.jpeg" alt="Light as a feather necklace">
-                </a>
-                <div class="info">
-                    <p>Light as a Feather Necklace <span>&#128722;</span></p>
-                    <p>$9.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="product-card">
-                <a href="product3.html">
-                    <img src="/thumbnails/product3.jpeg" alt="Steeze Skater Ring">
-                </a>
-                <div class="info">
-                    <p>Steeze Skater Ring <span>&#128722;</span></p>
-                    <p>$6.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="product-card">
-                <a href="product4.html">
-                    <img src="/thumbnails/product4.jpeg" alt="Under the Sea Stacked Bracelet">
-                </a>
-                <div class="info">
-                    <p>Under the Sea Stacked Bracelet <span>&#128722;</span></p>
-                    <p>$7.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 5 -->
-            <div class="product-card">
-                <a href="product5.html">
-                    <img src="/thumbnails/product5.jpeg" alt="Stacked Ribbon Earrings">
-                </a>
-                <div class="info">
-                    <p>Stacked Ribbon Earrings <span>&#128722;</span></p>
-                    <p>$3.99</p>
-                </div>
-            </div>
-
-            <!-- Product Card 6 -->
-            <div class="product-card">
-                <a href="product6.html">
-                    <img src="/thumbnails/product6.jpeg" alt="Rainbow Shell Bead Bracelet">
-                </a>
-                <div class="info">
-                    <p>Rainbow Shell Bead Bracelet <span>&#128722;</span></p>
-                    <p>$4.99</p>
-                </div>
+<!-- Main Content -->
+<main>
+    <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <a href="product1.html">
+                <img src="thumbnails/product1.jpeg" alt="Rainbow Shell Bead Necklace">
+            </a>
+            <div class="info">
+                <p>Rainbow Shell Bead Necklace <span>&#128722;</span></p>
+                <p>$8.99</p>
+                <p><button onclick="addToCart('Rainbow Shell Bead Necklace', 8.99)">Add to Cart</button></p>
             </div>
         </div>
-    </main>
 
-    <!-- Search Function -->
-    <script>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <a href="product2.html">
+                <img src="thumbnails/product2.jpeg" alt="Light as a Feather Necklace">
+            </a>
+            <div class="info">
+                <p>Light as a Feather Necklace <span>&#128722;</span></p>
+                <p>$9.99</p>
+                <p><button onclick="addToCart('Light as a Feather Necklace', 9.99)">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <a href="product3.html">
+                <img src="thumbnails/product3.jpeg" alt="Steeze Skater Ring">
+            </a>
+            <div class="info">
+                <p>Steeze Skater Ring <span>&#128722;</span></p>
+                <p>$6.99</p>
+                <p><button onclick="addToCart('Steeze Skater Ring', 6.99)">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <a href="product4.html">
+                <img src="thumbnails/product4.jpeg" alt="Under the Sea Stacked Bracelet">
+            </a>
+            <div class="info">
+                <p>Under the Sea Stacked Bracelet <span>&#128722;</span></p>
+                <p>$7.99</p>
+                <p><button onclick="addToCart('Under the Sea Stacked Bracelet', 7.99)">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <a href="product5.html">
+                <img src="thumbnails/product5.jpeg" alt="Stacked Ribbon Earrings">
+            </a>
+            <div class="info">
+                <p>Stacked Ribbon Earrings <span>&#128722;</span></p>
+                <p>$3.99</p>
+                <p><button onclick="addToCart('Stacked Ribbon Earrings', 3.99)">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <a href="product6.html">
+                <img src="thumbnails/product6.jpeg" alt="Rainbow Shell Bead Bracelet">
+            </a>
+            <div class="info">
+                <p>Rainbow Shell Bead Bracelet <span>&#128722;</span></p>
+                <p>$4.99</p>
+                <p><button onclick="addToCart('Rainbow Shell Bead Bracelet', 4.99)">Add to Cart</button></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Scripts -->
+<script>
     function searchProducts() {
         var input = document.getElementById('searchInput').value.toLowerCase();
         var products = document.getElementsByClassName('product-card');
@@ -286,6 +285,20 @@
             } else {
                 products[i].style.display = "none";
             }
+        }
+    }
+
+    function addToCart(productName, productPrice) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Check if the product is already in the cart
+        const existingItem = cart.find(item => item.name === productName);
+        if (!existingItem) {
+            cart.push({ name: productName, price: productPrice });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(productName + " added to cart!");
+        } else {
+            alert("This item is already in your cart.");
         }
     }
 </script>
