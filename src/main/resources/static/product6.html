@@ -138,19 +138,38 @@ body {
         }		</style>
 	</head>
 	<body>
-		<!-- Header Section -->
-		<header>
-			<div class="top-bar">
-				<img alt="Logo" class="logo" src="/images/logo.jpg" />
-				<div class="icons">
-					<span>🔍</span> <!-- Search --><span>👤</span> <!-- User --><span>🛒</span> <!-- Cart --></div>
-			</div>
-			<nav>
-				<button onclick="location.href='landingpage.html'">Home</button>
-                <button onclick="location.href='aboutus.html'">About Us</button>
-                <button onclick="location.href='contactUs.html'">Contact Us</button>
-            </nav>
-		</header>
+<!-- Header Section -->
+<header>
+    <div class="top-bar">
+        <img src="images/logo.jpg" class="logo" alt="Logo">
+        <div class="store-name">The BaeBijoux</div>
+
+        <div class="icons">
+            <!-- Search Icon - Hover to Show Search Bar -->
+            <div class="search-hover-area">
+                <span>&#128269;</span> <!-- Search icon -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+                </div>
+            </div>
+
+            <!-- User Icon (Link to Login Page) -->
+            <a href="login.html">
+                <span>&#128100;</span> <!-- User icon -->
+            </a>
+
+            <!-- Cart Icon (Link to Checkout Screen) -->
+            <a href="checkout Screen.html">
+                <span>&#128722;</span> <!-- Cart icon -->
+            </a>
+        </div>
+    </div>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='aboutus.html'">About Us</button>
+            <button onclick="location.href='contactUs.html'">Contact Us</button>
+        </nav>
+    </header>
 		<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 500px">
 			<tbody>
 				<tr>
