@@ -41,4 +41,8 @@ Click [here](/userInterfaceDesign/README.md) for a high-fidelity interactive moc
 
 Click [here](/technicalDesign/README.md) to view our project technical design.
 
+### Implementation Plan
+
+Click [here](/implementationPlanREADME.md) to view our implementation plan.
+
 Thank you for viewing our work!
