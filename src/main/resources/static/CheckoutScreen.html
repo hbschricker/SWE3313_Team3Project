@@ -114,6 +114,11 @@
             font-size: 18px;
 
         }
+        .quantity-controls span {
+            cursor: pointer;
+            padding: 0 5px;
+            user-select: none;
+        }
 
         .item-price {
             display: flex;
@@ -125,10 +130,10 @@
         .item-price span {
             margin-right: 10px;
         }
-
-        .trash-icon {
+         .trash-icon {
             font-size: 20px;
             cursor: pointer;
+            color: red;
         }
 
         /* Total Section */
@@ -192,7 +197,7 @@
         <div class="store-name">The BaeBijoux</div> <!-- Store name added here -->
         <div class="icons">
             <span>&#128100;</span> <!-- User -->
-            <span>&#128722;</span> <!-- Cart -->
+            <span onclick="window.location.href='checkout.html'">&#128722;</span> <!-- Cart -->
         </div>
     </div>
     <nav>
@@ -206,51 +211,84 @@
     <div class="checkout-container">
         <div class="order-summary">
             <h3>Order Summary</h3>
-
-            <div class="item">
-                <div class="item-name">
-                    <span>Steeze Skater Ring</span>
-                    <div class="quantity-controls">
-                        <span>-</span>
-                        <span>1</span>
-                        <span>+</span>
-                    </div>
-                </div>
-                <div class="item-price">
-                    <span>$6.99</span>
-                    <span class="trash-icon">&#128465;</span> <!-- Trashcan Icon -->
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-name">
-                    <span>Light as a Feather Necklace</span>
-                    <div class="quantity-controls">
-                        <span>-</span>
-                        <span>1</span>
-                        <span>+</span>
-                    </div>
-                </div>
-                <div class="item-price">
-                    <span>$9.99</span>
-                    <span class="trash-icon">&#128465;</span> <!-- Trashcan Icon -->
-                </div>
-            </div>
-
+            <div id="cart-items"></div>
             <div class="total">
                 <span>Total</span>
-                <span>$16.98</span>
-                <span class="trash-icon">&#128465;</span> <!-- Trashcan Icon for total -->
+                <span id="total-price">$0.00</span>
             </div>
+            <a href="Shipping.html">
+                <button class="checkout-btn">Pay Now</button>
+            </a>
         </div>
-        <a href="Shipping.html">
-            <button class="checkout-btn">Pay Now</button>
-
-</main>
-        </a>
-
     </div>
 </main>
 
+<script>
+    // Load cart items from localStorage
+    function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItemsContainer = document.getElementById('cart-items');
+        const totalPriceElement = document.getElementById('total-price');
 
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('item');
+
+            itemElement.innerHTML = `
+                <div class="item-name">
+                    <span>${item.name}</span>
+                    <div class="quantity-controls">
+                        <span onclick="decreaseQuantity(${index})">-</span>
+                        <span>${item.quantity}</span>
+                        <span onclick="increaseQuantity(${index})">+</span>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$${(item.price * item.quantity).toFixed(2)}</span>
+                    <span class="trash-icon" onclick="removeItem(${index})">&#128465;</span>
+                </div>
+            `;
+
+            cartItemsContainer.appendChild(itemElement);
+            total += item.price * item.quantity;
+        });
+
+        totalPriceElement.textContent = `$${total.toFixed(2)}`;
+    }
+
+    // Remove the item completely from cart
+    function removeItem(index) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    // Decrease quantity
+    function decreaseQuantity(index) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (cart[index].quantity > 1) {
+            cart[index].quantity--;
+        } else {
+            cart.splice(index, 1);
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    // Increase quantity
+    function increaseQuantity(index) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart[index].quantity++;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    window.onload = loadCart;
+</script>
+
+</body>
 </html>
