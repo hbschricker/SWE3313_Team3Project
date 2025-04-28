@@ -5,7 +5,7 @@ To make our project work you need to have the following on your computer:
 
 * JDK 21 has to be on your computer
 * Apache Maven has to be on your computer
-* git or git-bassh has to be on your computer (if you are on windows)
+* git or git-bash has to be on your computer (if you are on windows)
 
 Steps:
 1. Go to an empty folder on your computer.
