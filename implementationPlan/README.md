@@ -22,7 +22,7 @@ mvn clean install -Dmaven.test.skip=true -DskipTests=true spring-boot:run
 ```
 5. Once successfully run, go to the following page:
 ```
-http://localhost:8080/
+http://localhost:8080/login.html
 ```
 
 ### Implementation Presentation:
