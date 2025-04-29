@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Customer Login</title>
     <style>
-        /* Reset and Base Styles */
+    
         * {
           margin: 0;
           padding: 0;
@@ -184,5 +184,38 @@
         </form>
     </div>
 </main>
+    <script>
+    function showCartMessage() {
+        alert("You must login in order to check out.");
+    }
+
+    // Simulated login with admin check
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        // Simulated login (you can replace with real fetch call to Spring Boot API)
+        if (email === "admin@gmail.com" && password === "admin123") {
+            localStorage.setItem("loggedIn", "admin");
+            window.location.href = "administratorLandingPage.html";
+        } else if (email === "hello@gmail.com" && password === "Password34") {
+            localStorage.setItem("loggedIn", "user");
+            window.location.href = "userLandingPage.html";
+        } else {
+            document.getElementById("message").textContent = "Invalid credentials. Please try again.";
+        }
+    });
+
+    // Optional: stay logged in
+    window.onload = function() {
+        const loggedIn = localStorage.getItem("loggedIn");
+        if (loggedIn === "admin") {
+            window.location.href = "administratorLandingPage.html";
+        } else if (loggedIn === "user") {
+            window.location.href = "userLandingPage.html";
+        }
+    };
+</script>
 </body>
 </html>
