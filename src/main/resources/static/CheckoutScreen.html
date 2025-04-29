@@ -99,28 +99,10 @@
         }
 
         .item-name {
-            flex: 1;
+            flex: 2;
+            text-align: left;
         }
-
-        .item-name span {
-            display: block;
-        }
-
-        .quantity-controls {
-            margin-top: 5px;
-            display: flex;
-            justify-content: space-between
-            width: 50px;
-            font-size: 18px;
-
-        }
-        .quantity-controls span {
-            cursor: pointer;
-            padding: 0 5px;
-            user-select: none;
-        }
-
-        .item-price {
+       .item-price {
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -128,15 +110,16 @@
         }
 
         .item-price span {
+            margin-left: 10px;
             margin-right: 10px;
         }
-         .trash-icon {
+
+        .trash-icon {
             font-size: 20px;
             cursor: pointer;
             color: red;
         }
 
-        /* Total Section */
         .total {
             display: flex;
             justify-content: space-between;
@@ -146,11 +129,6 @@
             align-items: center;
         }
 
-        .total span:last-child {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
 
         .checkout-btn {
             width: 45%;
@@ -224,7 +202,6 @@
 </main>
 
 <script>
-    // Load cart items from localStorage
     function loadCart() {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         const cartItemsContainer = document.getElementById('cart-items');
@@ -240,49 +217,23 @@
             itemElement.innerHTML = `
                 <div class="item-name">
                     <span>${item.name}</span>
-                    <div class="quantity-controls">
-                        <span onclick="decreaseQuantity(${index})">-</span>
-                        <span>${item.quantity}</span>
-                        <span onclick="increaseQuantity(${index})">+</span>
-                    </div>
                 </div>
                 <div class="item-price">
-                    <span>$${(item.price * item.quantity).toFixed(2)}</span>
+                    <span>$${(item.price).toFixed(2)}</span>
                     <span class="trash-icon" onclick="removeItem(${index})">&#128465;</span>
                 </div>
             `;
 
             cartItemsContainer.appendChild(itemElement);
-            total += item.price * item.quantity;
+            total += item.price;
         });
 
         totalPriceElement.textContent = `$${total.toFixed(2)}`;
     }
 
-    // Remove the item completely from cart
     function removeItem(index) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         cart.splice(index, 1);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        loadCart();
-    }
-
-    // Decrease quantity
-    function decreaseQuantity(index) {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        if (cart[index].quantity > 1) {
-            cart[index].quantity--;
-        } else {
-            cart.splice(index, 1);
-        }
-        localStorage.setItem('cart', JSON.stringify(cart));
-        loadCart();
-    }
-
-    // Increase quantity
-    function increaseQuantity(index) {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart[index].quantity++;
         localStorage.setItem('cart', JSON.stringify(cart));
         loadCart();
     }
