@@ -1,5 +1,7 @@
 # Implementation Plan
 
+Welcome to our Implementation Plan page! Here, you will find the requirements and instructions to run our project on your device and a video demonstration of the website.
+
 ### Instructions:
 To make our project work you need to have the following on your computer:
 
