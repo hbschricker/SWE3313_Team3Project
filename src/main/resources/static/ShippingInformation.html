@@ -72,41 +72,34 @@
             display: flex;
             justify-content: space-between;
             padding: 20px;
+            flex-wrap: wrap;
         }
 
-        /* Shipping Options Section */
-        .shipping-container {
+        .shipping-container, .shipping-form-container {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 40%;
+            width: 48%;
+            margin-bottom: 20px;
         }
 
-        .shipping-container h3 {
+        .shipping-container h3, .shipping-form-container h3 {Bray06
+
             font-size: 24px;
             margin-bottom: 20px;
         }
 
         .shipping-option {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
+            align-items: center;
+            margin-bottom: 15px;
             font-size: 18px;
         }
 
-        /* ShippingInformation Form Section */
-        .shipping-form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 55%;
-        }
-
-        .shipping-form-container h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
+        .shipping-option input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.2);
         }
 
         .form-group {
@@ -119,15 +112,7 @@
             display: block;
         }
 
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .form-group select {
+        .form-group input, .form-group select {
             width: 100%;
             padding: 10px;
             font-size: 16px;
@@ -154,13 +139,13 @@
         }
 
         /* Mobile Responsiveness */
-        @media (max-width: 600px) {
-            .shipping-container {
-                width: 100%;
-                margin-bottom: 20px;
+       @media (max-width: 768px) {
+            main {
+                flex-direction: column;
             }
 
-            .shipping-form-container {
+
+            .shipping-form-container, .shipping-form-container {
                 width: 100%;
             }
         }
@@ -188,27 +173,30 @@
     <!-- Shipping Options Section -->
     <div class="shipping-container">
         <h3>Shipping Options</h3>
-        <div class="shipping-option">
-            <span>Overnight</span>
-            <span>$29.00</span>
-        </div>
-        <div class="shipping-option">
-            <span>3-Day</span>
-            <span>$19.00</span>
-        </div>
-        <div class="shipping-option">
-            <span>Ground</span>
-            <span>Free</span>
-        </div>
+        <form id="shipping-options-form">
+            <div class="shipping-option">
+                <input type="radio" id="overnight" name="shipping" value="Overnight" required>
+                <label for="overnight">Overnight - $29.00</label>
+            </div>
+            <div class="shipping-option">
+                <input type="radio" id="three-day" name="shipping" value="3-Day">
+                <label for="three-day">3-Day - $19.00</label>
+            </div>
+            <div class="shipping-option">
+                <input type="radio" id="ground" name="shipping" value="Ground">
+                <label for="ground">Ground - Free</label>
+            </div>
+        </form>
     </div>
 
-    <!-- ShippingInformation Form Section -->
+    <!-- Shipping Information Form Section -->
     <div class="shipping-form-container">
-        <h3>ShippingInformation</h3>
-        <form>
+        <h3>Shipping Information</h3>
+        <form id="shipping-form" action="payment.html" method="GET">
             <div class="form-group">
-                <label for="territory">Counter / Territory</label>
-                <select id="territory" name="territory">
+                <label for="territory">Country / Territory</label>
+                <select id="territory" name="territory" required>
+                    <option value="">--Select Territory--</option>
                     <option value="territory1">Territory 1</option>
                     <option value="territory2">Territory 2</option>
                     <option value="territory3">Territory 3</option>
@@ -242,9 +230,7 @@
                 <label for="telephone">Telephone Number</label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number" required>
             </div>
-            <a href="payment.html">
-                <button type="button" class="billing-btn">Billing Information</button>
-            </a>
+            <button type="submit" class="billing-btn">Billing Information</button>
         </form>
     </div>
 </main>
