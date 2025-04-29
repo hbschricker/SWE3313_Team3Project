@@ -28,10 +28,10 @@
         }
 
         .store-name {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-left: 15px;
+          font-size: 24px;
+          font-weight: bold;
+          color: #333;
+          margin-left: 15px;
         }
 
         .icons {
@@ -47,16 +47,21 @@
           position: relative;
         }
 
-        /* Search bar */
+        /* Search Hover Area */
+        .search-hover-area {
+          position: relative;
+        }
+
         .search-bar {
           display: none;
           position: absolute;
-          top: 50px;
-          right: 100px;
+          top: 30px;
+          right: 0;
           background-color: white;
           padding: 8px;
           border-radius: 8px;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          z-index: 10;
         }
 
         .search-bar input {
@@ -65,6 +70,10 @@
           border-radius: 8px;
           border: 1px solid #ccc;
           width: 250px;
+        }
+
+        .search-hover-area:hover .search-bar {
+          display: block;
         }
 
         nav {
@@ -168,7 +177,7 @@
 
         <div class="icons">
             <div class="search-hover-area">
-                <span>&#128269;</span>
+                <span>&#128269;</span> <!-- Search icon -->
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
                 </div>
@@ -185,7 +194,7 @@
     </div>
 
     <nav>
-        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='landingPage.html'">Home</button>
         <button onclick="location.href='aboutus.html'">About Us</button>
         <button onclick="location.href='contactUs.html'">Contact Us</button>
     </nav>
@@ -194,7 +203,8 @@
 <!-- Main Content -->
 <main>
     <div class="product-grid">
-        <!-- Product Card 1 -->
+        <!-- Product Cards Here -->
+        <!-- Same product cards as before -->
         <div class="product-card">
             <a href="product1.html">
                 <img src="thumbnails/product1.jpeg" alt="Rainbow Shell Bead Necklace">
@@ -206,43 +216,39 @@
             </div>
         </div>
 
-        <!-- Product Card 2 -->
         <div class="product-card">
             <a href="product2.html">
                 <img src="thumbnails/product2.jpeg" alt="Light as a Feather Necklace">
             </a>
             <div class="info">
-                <p>Light as a Feather Necklace </p>
+                <p>Light as a Feather Necklace</p>
                 <p>$9.99</p>
                 <p><button onclick="addToCart('Light as a Feather Necklace', 9.99)">Add to Cart</button></p>
             </div>
         </div>
 
-        <!-- Product Card 3 -->
         <div class="product-card">
             <a href="product3.html">
                 <img src="thumbnails/product3.jpeg" alt="Steeze Skater Ring">
             </a>
             <div class="info">
-                <p>Steeze Skater Ring </p>
+                <p>Steeze Skater Ring</p>
                 <p>$6.99</p>
                 <p><button onclick="addToCart('Steeze Skater Ring', 6.99)">Add to Cart</button></p>
             </div>
         </div>
 
-        <!-- Product Card 4 -->
         <div class="product-card">
             <a href="product4.html">
                 <img src="thumbnails/product4.jpeg" alt="Under the Sea Stacked Bracelet">
             </a>
             <div class="info">
-                <p>Under the Sea Stacked Bracelet </p>
+                <p>Under the Sea Stacked Bracelet</p>
                 <p>$7.99</p>
                 <p><button onclick="addToCart('Under the Sea Stacked Bracelet', 7.99)">Add to Cart</button></p>
             </div>
         </div>
 
-        <!-- Product Card 5 -->
         <div class="product-card">
             <a href="product5.html">
                 <img src="thumbnails/product5.jpeg" alt="Stacked Ribbon Earrings">
@@ -254,13 +260,12 @@
             </div>
         </div>
 
-        <!-- Product Card 6 -->
         <div class="product-card">
             <a href="product6.html">
                 <img src="thumbnails/product6.jpeg" alt="Rainbow Shell Bead Bracelet">
             </a>
             <div class="info">
-                <p>Rainbow Shell Bead Bracelet </p>
+                <p>Rainbow Shell Bead Bracelet</p>
                 <p>$4.99</p>
                 <p><button onclick="addToCart('Rainbow Shell Bead Bracelet', 4.99)">Add to Cart</button></p>
             </div>
@@ -287,7 +292,6 @@
     function addToCart(productName, productPrice) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-        // Check if the product is already in the cart
         const existingItem = cart.find(item => item.name === productName);
         if (!existingItem) {
             cart.push({ name: productName, price: productPrice });
@@ -298,5 +302,6 @@
         }
     }
 </script>
+
 </body>
 </html>

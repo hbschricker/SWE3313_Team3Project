@@ -97,7 +97,7 @@
     - Priority: Must Have
     - Estimated Effort: 8 hours
     - Functional
-	- Users must be taken to the checkout screen once they have items in their cart and click the checkout button.
+	- Users must be taken to the CheckoutScreen once they have items in their cart and click the checkout button.
 
 - #### (T3S-16) Users must not be able to click the checkout button with an empty cart.
     - Priority: Must Have
@@ -117,25 +117,25 @@
     - Functional
 	- User's information, such as their credit card and address, must be collected to ensure the payment is authentic.
 
-### (T3E-6) Checkout Screen:
+### (T3E-6) CheckoutScreen:
 
-- #### (T3S-19) The checkout screen must display the cart items and subtotal.
+- #### (T3S-19) The CheckoutScreen must display the cart items and subtotal.
     - Priority: Must Have
     - Estimated Effort: 2 days
     - Functional
     - The screen must show each item's picture, name, description, and a subtotal of all prices.
 
-- #### (T3S-20) Users must be able to go to a payment screen from the checkout screen.
+- #### (T3S-20) Users must be able to go to a payment screen from the CheckoutScreen.
     - Priority: Must Have
     - Estimated Effort: 12 hours - 1 day
     - Functional
     - There must be a 'Pay Now' button that will take the user to the Payment Screen.
 
-- #### (T3S-21) Users must not be able to revisit the Checkout Screen after purchase.
+- #### (T3S-21) Users must not be able to revisit the CheckoutScreen after purchase.
     - Priority: Must Have
     - Estimated Effort: 6 hours
     - Functional
-	- After the user's transaction is completed, they cannot go back to the checkout screen.
+	- After the user's transaction is completed, they cannot go back to the CheckoutScreen.
 
 ### (T3E-7) Payment Screen:
 
@@ -173,7 +173,7 @@
     - Priority: Must Have
     - Estimated Effort: 1-2 days
     - Functional
-		- The payment screen must have a 'Confirm Order' button that the user's can click. This button will take the users to the Order Confirmation Screen.
+		- The payment screen must have a 'ConfirmOrder' button that the user's can click. This button will take the users to the Order Confirmation Screen.
 
 - #### (T3S-28) Users must not be able to revisit the Payment Screen after purchase.
     - Priority: Must Have
