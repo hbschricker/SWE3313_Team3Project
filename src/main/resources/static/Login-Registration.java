@@ -34,11 +34,29 @@ public class Login {
         }
         return  true;
     }
+      /* @param email
+     * @param password
+     */
+    public void adminLogin(String email, String password) {
+        if (login(email, password)) {
+            System.out.println("Admin login successful! Redirecting to administratorLandingPage...");
+            
+        } else {
+            System.out.println("Admin login failed! Please check your credentials.");
+        }
+    }
+
+
+
+    
 
     public static void main (String[] args)
     {
         Login loginApp = new Login();
         System.out.println("Login : " + loginApp.login("hello@gmail.com", "Password34"));
         System.out.println("Account: " + loginApp.createAccount("brook", "James", "Jbrook123", "hello@gmail.com", "Password34"));
+        loginApp.adminLogin("preethi@gmail.com", "Password65"); // Should succeed
+        loginApp.adminLogin("wrong@gmail.com", "wrongPassword"); // Should fail
+    }
     }
 }
