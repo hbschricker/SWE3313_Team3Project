@@ -195,8 +195,8 @@
                 <span>&#128100;</span> <!-- User icon -->
             </a>
 
-            <!-- Cart Icon (Link to CheckoutScreen) -->
-            <a href="CheckoutScreen.html">
+            <!-- Cart Icon (Link to Checkout Screen) -->
+            <a href="checkout Screen.html">
                 <span>&#128722;</span> <!-- Cart icon -->
             </a>
         </div>
@@ -226,13 +226,13 @@
         <td>lilyjeck14</td>
         <td>lilyjeck14@gmail.com</td>
         <td>User</td>
-        <td><button>Promote</button></td>
+        <td><button class="replaceButton" onclick = "replaceWithText(this)">Promote</button></td>
     </tr>
     <tr>
         <td>jantin</td>
         <td>janicetinett@gmail.com</td>
         <td>User</td>
-        <td><button>Promote</button></td>
+        <td><button class="replaceButton" onclick = "replaceWithText(this)">Promote</button></td>
     </tr>
     <tr>
         <td>deansilvan</td>
@@ -244,7 +244,7 @@
         <td>merriemk</td>
         <td>merkeri@gmail.com</td>
         <td>User</td>
-        <td><button>Promote</button></td>
+        <td><button class="replaceButton" onclick = "replaceWithText(this)">Promote</button></td>
     </tr>
 </table>
 
@@ -263,6 +263,16 @@
             }
         }
     }
+
+    function replaceWithText() {
+
+    // Create a text node
+    const text = document.createTextNode("Admin");
+
+    // Replace the button with the text node
+    button.parentNode.replaceChild(text, button);
 </script>
 </body>
 </html>
+
+
